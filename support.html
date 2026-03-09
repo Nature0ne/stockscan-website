@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – StockScan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #0f1117; --paper: #f5f3ee; --accent: #1a6b3c; --accent-light: #e8f4ed; --muted: #6b7280; --border: #ddd8ce; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.7; }
+    nav { background: var(--ink); padding: 1.2rem 2rem; display: flex; align-items: center; gap: 1rem; }
+    nav a { color: white; text-decoration: none; font-family: 'DM Serif Display', serif; font-size: 1.3rem; }
+    nav span { color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+    .hero { background: var(--accent); color: white; padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-family: 'DM Serif Display', serif; font-size: 2.8rem; margin-bottom: 0.8rem; }
+    .hero p { font-size: 1.05rem; opacity: 0.85; }
+    .container { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+    .faq-grid { display: grid; gap: 1rem; margin-bottom: 4rem; }
+    .faq-item { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem 2rem; }
+    .faq-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .faq-item p { color: var(--muted); font-size: 0.9rem; }
+    .contact-box { background: var(--accent-light); border-radius: 16px; padding: 3rem; text-align: center; }
+    .contact-box h2 { font-family: 'DM Serif Display', serif; font-size: 2rem; margin-bottom: 0.8rem; }
+    .contact-box p { color: #3a5a45; margin-bottom: 2rem; }
+    .btn { background: var(--accent); color: white; padding: 0.9rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+    .section-title { font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1.5rem; }
+    footer { background: var(--ink); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.82rem; }
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 0.5rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html">StockScan</a>
+  <span>/ Support</span>
+</nav>
+
+<div class="hero">
+  <h1>Wie können wir helfen?</h1>
+  <p>Antworten auf häufige Fragen und direkter Kontakt zu unserem Support-Team.</p>
+</div>
+
+<div class="container">
+  <h2 class="section-title">Häufige Fragen</h2>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <h3>Wie importiere ich Produktstammdaten aus Excel?</h3>
+      <p>Öffnen Sie die App und tippen Sie auf „Stammdaten importieren". Wählen Sie Ihre Excel-Datei aus. Die Spalten für EAN, Artikelnummer und Produktname werden automatisch erkannt. Sie können die Zuordnung vor dem Import noch anpassen.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Welche Barcodes werden unterstützt?</h3>
+      <p>StockScan unterstützt EAN-13, EAN-8, UPC-A und Code 128. Die Erkennung erfolgt automatisch beim Scannen – Sie müssen den Typ nicht manuell auswählen.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Wie funktionieren mathematische Ausdrücke bei der Mengeneingabe?</h3>
+      <p>Geben Sie bei der Menge einen Ausdruck wie "12*5" ein – StockScan berechnet das Ergebnis automatisch (60 Stück). So können Sie z.B. Kartons mit Stückzahl direkt erfassen.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Was passiert bei doppelt gescannten Artikeln?</h3>
+      <p>StockScan erkennt Duplikate automatisch und fragt Sie, ob die neue Menge zur bestehenden addiert oder ob die Erfassung ersetzt werden soll.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Wie exportiere ich die Inventurliste?</h3>
+      <p>Öffnen Sie die gewünschte Inventurliste und tippen Sie auf das Export-Symbol oben rechts. Wählen Sie „Als Excel exportieren" – die XLSX-Datei wird erstellt und Sie können sie direkt teilen.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Werden meine Daten in der Cloud gespeichert?</h3>
+      <p>Nein. Alle Daten bleiben ausschließlich auf Ihrem Gerät. StockScan benötigt keine Internetverbindung und sendet keine Daten an externe Server.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Kann ich StockScan auf mehreren Geräten nutzen?</h3>
+      <p>Jedes Gerät speichert seine eigenen Daten lokal. Eine Synchronisierung zwischen Geräten ist derzeit nicht vorgesehen. Exportierte XLSX-Dateien können Sie manuell auf andere Geräte übertragen.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Die Kamera erkennt den Barcode nicht – was tun?</h3>
+      <p>Stellen Sie sicher, dass der Barcode gut beleuchtet und nicht beschädigt ist. Alternativ können Sie die Artikelnummer manuell eingeben. Falls das Problem anhält, kontaktieren Sie uns per E-Mail.</p>
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h2>Weitere Fragen?</h2>
+    <p>Unser Support-Team hilft Ihnen gerne weiter. Schreiben Sie uns eine E-Mail und wir melden uns so schnell wie möglich.</p>
+    <a class="btn" href="mailto:support@stockscan.app">✉ support@stockscan.app</a>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">Startseite</a>
+  <a href="privacy.html">Datenschutz</a>
+  <a href="impressum.html">Impressum</a>
+  <br/><br/>© 2025 StockScan
+</footer>
+</body>
+</html>

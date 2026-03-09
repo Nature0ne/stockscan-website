@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockScan – Professionelle Inventur-App</title>
+  <meta name="description" content="StockScan – Die professionelle Inventur-App für Ihr Unternehmen. Barcode-Scanner, Excel-Export, komplett offline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f1117;
+      --paper: #f5f3ee;
+      --accent: #1a6b3c;
+      --accent-light: #e8f4ed;
+      --muted: #6b7280;
+      --border: #ddd8ce;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 2.5rem;
+      background: rgba(245, 243, 238, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a {
+      text-decoration: none; color: var(--muted);
+      font-size: 0.9rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .btn-primary {
+      background: var(--accent); color: var(--white);
+      padding: 0.55rem 1.3rem; border-radius: 6px;
+      font-size: 0.88rem; font-weight: 600;
+      text-decoration: none; transition: opacity 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; gap: 4rem;
+      padding: 8rem 5rem 5rem;
+      max-width: 1300px; margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent-light); color: var(--accent);
+      padding: 0.4rem 0.9rem; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em;
+      text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.5rem; }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    h1 em {
+      font-style: italic; color: var(--accent);
+    }
+    .hero-sub {
+      font-size: 1.1rem; color: var(--muted);
+      max-width: 420px; margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+    .btn-ghost {
+      color: var(--ink); font-size: 0.9rem; font-weight: 500;
+      text-decoration: none; display: flex; align-items: center; gap: 0.4rem;
+    }
+    .btn-ghost:hover { text-decoration: underline; }
+    .app-store-btn {
+      display: inline-block;
+      background: var(--ink); color: var(--white);
+      padding: 0.8rem 1.6rem; border-radius: 10px;
+      text-decoration: none; font-weight: 600;
+      font-size: 0.95rem; transition: opacity 0.2s;
+      display: flex; align-items: center; gap: 0.7rem;
+    }
+    .app-store-btn:hover { opacity: 0.8; }
+
+    /* PHONE MOCKUP */
+    .hero-visual {
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+    }
+    .phone-frame {
+      width: 260px; height: 520px;
+      background: var(--ink);
+      border-radius: 36px;
+      padding: 12px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.05);
+      position: relative; z-index: 2;
+    }
+    .phone-screen {
+      width: 100%; height: 100%;
+      background: #f0f0f0;
+      border-radius: 26px;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .phone-header {
+      background: var(--accent); padding: 1rem;
+      color: white; font-size: 0.7rem; font-weight: 600;
+    }
+    .phone-header-title { font-size: 0.9rem; margin-bottom: 0.2rem; }
+    .phone-body { padding: 0.8rem; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+    .scan-bar {
+      background: white; border-radius: 8px; padding: 0.6rem 0.8rem;
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.65rem; color: #666;
+      border: 2px solid var(--accent);
+    }
+    .scan-icon { font-size: 1rem; }
+    .item-row {
+      background: white; border-radius: 8px; padding: 0.6rem 0.8rem;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.6rem;
+    }
+    .item-name { font-weight: 600; color: var(--ink); }
+    .item-ean { color: #999; font-size: 0.55rem; }
+    .item-qty {
+      background: var(--accent-light); color: var(--accent);
+      padding: 0.2rem 0.5rem; border-radius: 4px;
+      font-weight: 700; font-size: 0.65rem;
+    }
+    .phone-footer {
+      background: white; padding: 0.7rem;
+      display: flex; justify-content: space-around;
+      border-top: 1px solid #eee;
+    }
+    .tab-icon { font-size: 1.1rem; text-align: center; }
+    .tab-icon.active { color: var(--accent); }
+    .tab-icon:not(.active) { color: #ccc; }
+
+    /* BG DECO */
+    .hero-visual::before {
+      content: '';
+      position: absolute;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(26,107,60,0.12) 0%, transparent 70%);
+      border-radius: 50%; z-index: 1;
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--ink); color: rgba(255,255,255,0.7);
+      padding: 1rem 2rem;
+      display: flex; justify-content: center; gap: 3rem;
+      flex-wrap: wrap; font-size: 0.82rem;
+    }
+    .trust-item { display: flex; align-items: center; gap: 0.5rem; }
+    .trust-item strong { color: white; }
+
+    /* FEATURES */
+    .section {
+      max-width: 1200px; margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15; margin-bottom: 1rem;
+    }
+    .section-sub {
+      color: var(--muted); font-size: 1rem;
+      max-width: 500px; margin-bottom: 3.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px; padding: 2rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+    }
+    .feature-icon {
+      width: 48px; height: 48px;
+      background: var(--accent-light);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 1.2rem;
+    }
+    .feature-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem; margin-bottom: 0.7rem;
+    }
+    .feature-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+
+    /* HOW IT WORKS */
+    .how-section {
+      background: var(--ink); color: white;
+      padding: 6rem 2rem;
+    }
+    .how-inner { max-width: 1100px; margin: 0 auto; }
+    .how-section .section-label { color: #6ee7a0; }
+    .how-section .section-title { color: white; }
+    .how-section .section-sub { color: rgba(255,255,255,0.6); }
+
+    .steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem; counter-reset: steps;
+    }
+    .step { position: relative; }
+    .step-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3.5rem; color: rgba(255,255,255,0.08);
+      line-height: 1; margin-bottom: -0.5rem;
+    }
+    .step h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .step p { color: rgba(255,255,255,0.55); font-size: 0.88rem; line-height: 1.6; }
+
+    /* IDEAL FOR */
+    .ideal-section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .tags-grid { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 2rem; }
+    .tag {
+      background: var(--white); border: 1px solid var(--border);
+      padding: 0.6rem 1.2rem; border-radius: 30px;
+      font-size: 0.88rem; color: var(--ink); font-weight: 500;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+
+    /* PRIVACY */
+    .privacy-section {
+      background: var(--accent-light);
+      padding: 5rem 2rem;
+    }
+    .privacy-inner {
+      max-width: 1000px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+    .privacy-inner h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.2rem; margin-bottom: 1rem;
+    }
+    .privacy-inner p { color: #3a5a45; font-size: 0.95rem; line-height: 1.7; }
+    .privacy-points { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.7rem; }
+    .privacy-points li {
+      display: flex; align-items: center; gap: 0.7rem;
+      font-size: 0.9rem; color: #2a4a35; font-weight: 500;
+    }
+    .privacy-points li::before {
+      content: '✓'; color: var(--accent);
+      font-weight: 700; font-size: 1rem;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center; padding: 7rem 2rem;
+      background: var(--paper);
+    }
+    .cta-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1.2rem;
+    }
+    .cta-section p { color: var(--muted); margin-bottom: 2.5rem; font-size: 1rem; }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink); color: rgba(255,255,255,0.5);
+      padding: 2.5rem; text-align: center; font-size: 0.82rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 0.8rem; }
+    footer a:hover { color: white; }
+    .footer-links { margin-bottom: 0.8rem; }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding: 7rem 1.5rem 3rem; gap: 3rem; }
+      .hero-sub { margin: 0 auto 2rem; }
+      .hero-actions { justify-content: center; }
+      .privacy-inner { grid-template-columns: 1fr; gap: 2rem; }
+      nav { padding: 1rem 1.5rem; }
+      .nav-links a:not(.btn-primary) { display: none; }
+      .trust-bar { gap: 1.5rem; }
+      .hero-visual { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#"><span>Stock</span>Scan</a>
+  <div class="nav-links">
+    <a href="#features">Funktionen</a>
+    <a href="#how">So funktioniert's</a>
+    <a href="#support">Support</a>
+    <a class="btn-primary" href="#download">App laden</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section>
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge animate">Für iOS verfügbar</div>
+      <h1 class="animate delay-1">
+        Inventur.<br/><em>Einfach. Schnell.</em><br/>Zuverlässig.
+      </h1>
+      <p class="hero-sub animate delay-2">
+        StockScan ist die professionelle Inventur-App für Ihr Unternehmen. Barcode scannen, Mengen erfassen, Excel-Export – komplett offline und ohne Registrierung.
+      </p>
+      <div class="hero-actions animate delay-3">
+        <a class="app-store-btn" href="#download">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Im App Store laden
+        </a>
+        <a class="btn-ghost" href="#features">Mehr erfahren →</a>
+      </div>
+    </div>
+    <div class="hero-visual animate delay-2">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="phone-header">
+            <div class="phone-header-title">📦 Inventur Jan 2025</div>
+            <div>42 Artikel erfasst</div>
+          </div>
+          <div class="phone-body">
+            <div class="scan-bar">
+              <span class="scan-icon">▦</span>
+              <span>Barcode scannen oder tippen…</span>
+            </div>
+            <div class="item-row">
+              <div>
+                <div class="item-name">Mineralwasser 0,5L</div>
+                <div class="item-ean">EAN: 4000177150049</div>
+              </div>
+              <div class="item-qty">24 Stk</div>
+            </div>
+            <div class="item-row">
+              <div>
+                <div class="item-name">Bürostühle Standard</div>
+                <div class="item-ean">Art.Nr: BST-4421</div>
+              </div>
+              <div class="item-qty">8 Stk</div>
+            </div>
+            <div class="item-row">
+              <div>
+                <div class="item-name">Druckerpapier A4</div>
+                <div class="item-ean">EAN: 4006786012421</div>
+              </div>
+              <div class="item-qty">12*5</div>
+            </div>
+            <div class="item-row">
+              <div>
+                <div class="item-name">Kaffee Arabica 1kg</div>
+                <div class="item-ean">EAN: 4012345678901</div>
+              </div>
+              <div class="item-qty">6 Pkg</div>
+            </div>
+            <div class="item-row">
+              <div>
+                <div class="item-name">Monitor 27" 4K</div>
+                <div class="item-ean">Art.Nr: MON-2701</div>
+              </div>
+              <div class="item-qty">3 Stk</div>
+            </div>
+          </div>
+          <div class="phone-footer">
+            <div class="tab-icon active">⊞</div>
+            <div class="tab-icon">▦</div>
+            <div class="tab-icon">↑</div>
+            <div class="tab-icon">☰</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">✓ <strong>100% Offline</strong> – Keine Internetverbindung nötig</div>
+  <div class="trust-item">✓ <strong>Keine Registrierung</strong> – Sofort loslegen</div>
+  <div class="trust-item">✓ <strong>Datenschutz</strong> – Alle Daten bleiben auf Ihrem Gerät</div>
+  <div class="trust-item">✓ <strong>Excel-Export</strong> – XLSX mit einem Tap</div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-label">Funktionen</div>
+  <h2 class="section-title">Alles was Sie für eine<br/>professionelle Inventur brauchen</h2>
+  <p class="section-sub">Von der Barcode-Erfassung bis zum fertigen Excel-Report – StockScan deckt Ihren gesamten Inventurprozess ab.</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">▦</div>
+      <h3>Barcode-Scanner</h3>
+      <p>EAN-13, EAN-8, UPC-A und Code 128 werden zuverlässig erkannt. Mit intelligenter Duplikaterkennung und manueller Eingabe als Fallback.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Stammdaten aus Excel</h3>
+      <p>Importieren Sie Ihre bestehenden Produktdaten direkt aus Excel. Automatische Erkennung von Produktname, EAN und Artikelnummer.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧮</div>
+      <h3>Flexible Mengenerfassung</h3>
+      <p>Mathematische Ausdrücke wie "12*5" werden direkt berechnet. Individuelle Einheiten pro Artikel und Kommentarfunktion inklusive.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📋</div>
+      <h3>Mehrere Inventurlisten</h3>
+      <p>Verwalten Sie verschiedene Zählungen parallel. Mit Farbcodierung und Icons behalten Sie stets die Übersicht.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📤</div>
+      <h3>Excel-Export (XLSX)</h3>
+      <p>Vollständiger Export aller Inventurdaten mit Zeitstempel. Einfaches Teilen per Mail, AirDrop oder Cloud-Dienst.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>Datenschutz by Design</h3>
+      <p>Alle Daten verbleiben ausschließlich auf Ihrem Gerät. Keine Cloud, keine Server, keine Registrierung erforderlich.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+  <div class="how-inner">
+    <div class="section-label">So funktioniert's</div>
+    <h2 class="section-title" style="color:white">In 4 Schritten zur fertigen Inventur</h2>
+    <p class="section-sub">Keine Einarbeitung, kein Setup – starten Sie in unter einer Minute.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Stammdaten importieren</h3>
+        <p>Laden Sie Ihre Excel-Tabelle mit Produktdaten. Dieser Schritt ist optional – Sie können auch direkt loslegen.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Barcode scannen</h3>
+        <p>Richten Sie die Kamera auf den Barcode oder geben Sie die Artikelnummer manuell ein.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Menge erfassen</h3>
+        <p>Zählung eingeben – auch mit Rechenformeln wie "3*12". Kommentare für Sonderinformationen möglich.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Als Excel exportieren</h3>
+        <p>Ein Tap genügt für den vollständigen XLSX-Export mit allen Details und Zeitstempeln.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDEAL FOR -->
+<section class="ideal-section">
+  <div class="section-label">Einsatzbereiche</div>
+  <h2 class="section-title">Ideal für viele Branchen</h2>
+  <p class="section-sub">StockScan ist für jedes Unternehmen geeignet, das schnelle und zuverlässige Inventuren benötigt.</p>
+  <div class="tags-grid">
+    <div class="tag">🏪 Einzelhandel</div>
+    <div class="tag">🏭 Lagerverwaltung</div>
+    <div class="tag">📦 Wareneingangskontrolle</div>
+    <div class="tag">📅 Jahresinventuren</div>
+    <div class="tag">🔄 Regelmäßige Bestandskontrollen</div>
+    <div class="tag">🏢 Kleine & mittlere Unternehmen</div>
+    <div class="tag">🛒 Gastronomie & Hotellerie</div>
+    <div class="tag">🏗️ Handwerk & Baugewerbe</div>
+    <div class="tag">💊 Apotheken</div>
+    <div class="tag">📚 Bibliotheken & Archive</div>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="privacy-section">
+  <div class="privacy-inner">
+    <div>
+      <h2>Ihre Daten gehören Ihnen – und nur Ihnen.</h2>
+      <p>In einer Zeit, in der jede App Ihre Daten in die Cloud sendet, geht StockScan einen anderen Weg. Vollständige Datensouveränität ohne Kompromisse.</p>
+      <ul class="privacy-points">
+        <li>Alle Daten bleiben auf Ihrem iPhone / iPad</li>
+        <li>Keine Internetverbindung erforderlich</li>
+        <li>Keine Benutzerkonten oder Registrierung</li>
+        <li>SwiftData für sichere lokale Speicherung</li>
+        <li>Kein Tracking, keine Werbung</li>
+      </ul>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔐</div>
+      <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.8rem;">Datenschutz-Versprechen</h3>
+      <p style="color: var(--muted); font-size: 0.9rem; line-height: 1.7;">StockScan überträgt keine Daten an externe Server. Alle Inventurdaten, Produktstammdaten und Einstellungen werden ausschließlich lokal auf Ihrem Gerät gespeichert und verlassen dieses nur, wenn Sie aktiv einen Export durchführen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="download">
+  <h2>Bereit für Ihre nächste Inventur?</h2>
+  <p>Laden Sie StockScan kostenlos im App Store herunter und starten Sie noch heute.</p>
+  <a class="app-store-btn" href="#" style="display:inline-flex; margin: 0 auto;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    Im App Store laden
+  </a>
+</section>
+
+<!-- SUPPORT -->
+<section class="section" id="support" style="padding-top: 3rem; padding-bottom: 4rem; border-top: 1px solid var(--border);">
+  <div class="section-label">Support</div>
+  <h2 class="section-title" style="font-size: 2rem;">Haben Sie Fragen?</h2>
+  <p style="color: var(--muted); margin-bottom: 1.5rem; max-width: 500px;">Wir helfen Ihnen gerne weiter. Kontaktieren Sie uns per E-Mail und wir melden uns so schnell wie möglich.</p>
+  <a class="btn-primary" href="mailto:support@stockscan.app" style="font-size: 1rem; padding: 0.8rem 1.8rem;">
+    ✉ support@stockscan.app
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="#features">Funktionen</a>
+    <a href="privacy.html">Datenschutzerklärung</a>
+    <a href="#support">Support</a>
+    <a href="impressum.html">Impressum</a>
+  </div>
+  <div>© 2025 StockScan. Alle Rechte vorbehalten. Entwickelt in Deutschland 🇩🇪</div>
+</footer>
+
+</body>
+</html>
