@@ -87,7 +87,7 @@
   <p class="updated">Zuletzt aktualisiert: 15. Juli 2026</p>
 
   <div class="highlight">
-    <strong>Kurz zusammengefasst:</strong> StockScan funktioniert ohne StockScan-Konto und speichert Inventurdaten zuerst lokal. Pro-Nutzer können freiwillig eine Synchronisierung ihrer Inventuren über Apples private CloudKit-Datenbank aktivieren. Stammdaten bleiben lokal. Käufe, Wiederherstellungen und Family Sharing werden nativ von Apple abgewickelt. StockScan verwendet weder Werbung noch Tracking oder Analysedienste.
+    <strong>Kurz zusammengefasst:</strong> StockScan funktioniert ohne StockScan-Konto und speichert Inventurdaten lokal. Eine freiwillige Synchronisierung über Apples private CloudKit-Datenbank ist für ein kommendes Pro-Update technisch vorbereitet, in der aktuellen App-Store-Version aber noch nicht aktiv. Stammdaten bleiben lokal. Käufe, Wiederherstellungen und Family Sharing werden nativ von Apple abgewickelt. StockScan verwendet weder Werbung noch Tracking oder Analysedienste.
   </div>
 
   <h2>1. Verantwortliche Stelle</h2>
@@ -103,11 +103,11 @@
     <li>Zeitstempel der Erfassung</li>
     <li>Kommentare zu einzelnen Artikeln</li>
   </ul>
-  <p>Diese Daten werden zunächst <strong>lokal auf Ihrem Gerät</strong> gespeichert und bleiben dort die maßgebliche Datenquelle. Nur wenn Sie als Pro-Nutzer die iCloud-Synchronisierung freiwillig aktivieren, werden Inventurdaten zusätzlich wie im folgenden Abschnitt beschrieben über CloudKit synchronisiert. Importierte Produkt-, Hersteller- und Lieferanten-Stammdaten bleiben ausschließlich lokal.</p>
+  <p>Diese Daten werden in der aktuellen App-Store-Version <strong>lokal auf Ihrem Gerät</strong> gespeichert und bleiben dort die maßgebliche Datenquelle. Die technisch vorbereitete iCloud-Synchronisierung wird erst in einem späteren Pro-Update nach gesonderter Freigabe freiwillig aktivierbar. Importierte Produkt-, Hersteller- und Lieferanten-Stammdaten bleiben ausschließlich lokal.</p>
 
-  <h2>3. Optionale private iCloud-Synchronisierung</h2>
-  <p>StockScan Pro bietet eine freiwillig aktivierbare iCloud-Synchronisierung. Bei Aktivierung werden Ihre Inventuren in der <strong>privaten CloudKit-Datenbank Ihres Apple-Kontos</strong> gespeichert und zwischen Ihren eigenen Apple-Geräten synchronisiert. StockScan betreibt dafür keine Entwicklerdatenbank und der Entwickler erhält die synchronisierten Inventurinhalte nicht. Die Verarbeitung durch iCloud und CloudKit richtet sich nach Ihren Apple-Einstellungen und Apples Datenschutzbestimmungen.</p>
-  <p>Stammdaten aus Produkt-, Hersteller- und Lieferantenimporten werden nicht über CloudKit synchronisiert und bleiben lokal auf jedem Gerät. Ohne Pro, ohne iCloud, bei deaktivierter Synchronisierung oder ohne Netzwerkverbindung arbeitet StockScan mit dem lokalen Datenbestand weiter; vorhandene Daten bleiben lesbar und exportierbar.</p>
+  <h2>3. Vorbereitete optionale private iCloud-Synchronisierung</h2>
+  <p>Für ein kommendes StockScan-Pro-Update ist eine freiwillig aktivierbare iCloud-Synchronisierung vorbereitet, aber noch nicht veröffentlicht. Nach ihrer späteren Freigabe sollen Inventuren ausschließlich in der <strong>privaten CloudKit-Datenbank Ihres Apple-Kontos</strong> gespeichert und zwischen Ihren eigenen Apple-Geräten synchronisiert werden. StockScan betreibt dafür keine Entwicklerdatenbank und der Entwickler erhält die synchronisierten Inventurinhalte nicht. Die Verarbeitung durch iCloud und CloudKit richtet sich nach Ihren Apple-Einstellungen und Apples Datenschutzbestimmungen.</p>
+  <p>Stammdaten aus Produkt-, Hersteller- und Lieferantenimporten sind nicht für die CloudKit-Synchronisierung vorgesehen und bleiben lokal auf jedem Gerät. Ohne die später freiwillig aktivierte Synchronisierung arbeitet StockScan ausschließlich mit dem lokalen Datenbestand; vorhandene Daten bleiben lesbar und exportierbar.</p>
 
   <h2>4. App-Store-Käufe und Family Sharing</h2>
   <p>Monats- und Jahresabonnements werden nativ über Apple StoreKit verarbeitet. Dabei kommuniziert die App mit Apples App-Store-Diensten, um Produkte, Kaufstatus und Berechtigungen abzurufen oder Käufe wiederherzustellen. Beide Pro-Abonnements unterstützen Apples Family Sharing; die Freigabe und Verwaltung innerhalb Ihrer Familiengruppe erfolgt ausschließlich durch Apple anhand Ihrer Apple-ID- und Familieneinstellungen. StockScan erhält dabei nur den für die App erforderlichen Berechtigungsstatus, aber keine Zahlungs- oder Familienmitgliedsdaten. Zahlungsdaten werden nicht von StockScan oder dem Entwickler verarbeitet. StockScan nutzt keinen externen Zahlungs- oder Abonnementdienst und übermittelt keine Kaufereignisse an Drittanbieter.</p>
@@ -116,19 +116,19 @@
   <p>Für den Barcode-Scanner wird Kamerazugriff benötigt – ausschließlich zur Erkennung von Barcodes. Es werden keine Fotos gespeichert oder übertragen.</p>
 
   <h2>6. Lokale Datenspeicherung</h2>
-  <p>Lokale Inventur- und Stammdaten werden mit SwiftData gespeichert und durch die iOS-Sicherheitsarchitektur geschützt. Beim Löschen der App werden die lokalen App-Daten entfernt. Ein zusätzlich in der privaten CloudKit-Datenbank vorhandener Synchronisierungsstand sowie eine mögliche Wiederherstellung aus einem persönlichen Geräte-Backup richten sich nach Ihren Apple- und iCloud-Einstellungen.</p>
+  <p>Lokale Inventur- und Stammdaten werden mit SwiftData gespeichert und durch die iOS-Sicherheitsarchitektur geschützt. Beim Löschen der App werden die lokalen App-Daten entfernt. Nach einer späteren Freigabe der freiwilligen Synchronisierung würde ein zusätzlicher Stand in Ihrer privaten CloudKit-Datenbank Ihren Apple- und iCloud-Einstellungen unterliegen. Eine mögliche Wiederherstellung aus einem persönlichen Geräte-Backup richtet sich ebenfalls nach diesen Einstellungen.</p>
 
   <h2>7. iCloud-Backup</h2>
-  <p>Die optionale CloudKit-Synchronisierung ist vom allgemeinen iCloud-Gerätebackup zu unterscheiden. Falls iCloud-Backup aktiviert ist, können lokale App-Daten zusätzlich in Ihrem persönlichen iCloud-Backup gesichert werden. Dies richtet sich nach Ihren Apple-Einstellungen und unterliegt Apples Datenschutzbestimmungen.</p>
+  <p>Die für ein späteres Update vorbereitete CloudKit-Synchronisierung ist vom allgemeinen iCloud-Gerätebackup zu unterscheiden. Falls iCloud-Backup aktiviert ist, können lokale App-Daten bereits heute in Ihrem persönlichen iCloud-Backup gesichert werden. Dies richtet sich nach Ihren Apple-Einstellungen und unterliegt Apples Datenschutzbestimmungen.</p>
 
   <h2>8. Apple Watch</h2>
   <p>Wenn Sie die Apple-Watch-Funktionen verwenden, werden ausgewählte Zähldaten über Apples WatchConnectivity zwischen Ihrem iPhone und Ihrer gekoppelten Apple Watch übertragen. StockScan betreibt dafür keinen Entwickler-Server.</p>
 
   <h2>9. Tracking, Werbung und Entwickler-Server</h2>
-  <p>StockScan verwendet keine Analytics, keine Werbenetzwerke und kein Tracking. Es werden keine Inventur- oder Kaufdaten an Server des Entwicklers übertragen. Netzwerkzugriffe erfolgen nur für ausdrücklich genutzte Apple-Dienste, insbesondere für die freiwillig aktivierte private CloudKit-Synchronisierung sowie App-Store-Käufe, Family Sharing und Wiederherstellungen.</p>
+  <p>StockScan verwendet keine Analytics, keine Werbenetzwerke und kein Tracking. Es werden keine Inventur- oder Kaufdaten an Server des Entwicklers übertragen. In der aktuellen App-Store-Version erfolgen Netzwerkzugriffe für ausdrücklich genutzte Apple-Dienste wie App-Store-Käufe, Family Sharing und Wiederherstellungen. Private CloudKit-Zugriffe kommen erst nach Veröffentlichung und freiwilliger Aktivierung der vorbereiteten Synchronisierung hinzu.</p>
 
   <h2>10. Ihre Rechte und Löschung</h2>
-  <p>Sie können Inventurdaten jederzeit in der App löschen oder exportieren und die iCloud-Synchronisierung deaktivieren. Ihre iCloud- und Gerätebackups verwalten Sie in den Einstellungen Ihres Apple-Kontos. Bei datenschutzrechtlichen Fragen oder Anfragen wenden Sie sich bitte an die unten genannte Kontaktadresse.</p>
+  <p>Sie können Inventurdaten jederzeit in der App löschen oder exportieren. Nach Veröffentlichung der vorbereiteten Synchronisierung wird sie freiwillig aktivierbar und wieder deaktivierbar sein. Ihre iCloud- und Gerätebackups verwalten Sie in den Einstellungen Ihres Apple-Kontos. Bei datenschutzrechtlichen Fragen oder Anfragen wenden Sie sich bitte an die unten genannte Kontaktadresse.</p>
 
   <h2>11. Kontakt</h2>
   <p>Bei Fragen: <a href="mailto:stockscansupport@gmail.com">stockscansupport@gmail.com</a></p>
