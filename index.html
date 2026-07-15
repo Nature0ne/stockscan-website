@@ -4,11 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StockScan – Inventur-App für iPhone</title>
-<meta name="description" content="StockScan: Barcode scannen, Mengen erfassen, Excel-Export – komplett offline, ohne Account, ohne Cloud.">
+<meta name="description" content="StockScan: Barcode scannen, Mengen erfassen und kostenlos als CSV exportieren – lokal, ohne StockScan-Konto und ohne Tracking.">
 <link rel="icon" type="image/png" href="img/icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ===================== CSS VARIABLES ===================== */
 :root {
@@ -915,7 +912,7 @@ footer {
   <div class="hero-content">
     <div class="hero-badge animate d1 t" data-de="INVENTUR-APP FUR IPHONE" data-en="INVENTORY APP FOR IPHONE">INVENTUR-APP FUR IPHONE</div>
     <h1 class="animate d2">Inventur.<br><span class="green t" data-de="In Minuten." data-en="In Minutes.">In Minuten.</span></h1>
-    <p class="hero-sub animate d3 t" data-de="Barcode scannen, Mengen erfassen, Excel-Export - komplett offline, ohne Account, ohne Cloud." data-en="Scan barcodes, capture quantities, Excel export - completely offline, no account, no cloud.">Barcode scannen, Mengen erfassen, Excel-Export - komplett offline, ohne Account, ohne Cloud.</p>
+    <p class="hero-sub animate d3 t" data-de="Barcode scannen, Mengen erfassen und kostenlos als CSV exportieren – lokal, ohne StockScan-Konto und ohne Tracking." data-en="Scan barcodes, capture quantities, and export CSV for free — local, without a StockScan account or tracking.">Barcode scannen, Mengen erfassen und kostenlos als CSV exportieren – lokal, ohne StockScan-Konto und ohne Tracking.</p>
     <div class="hero-actions animate d3">
       <a href="https://apps.apple.com/de/app/stockscan/id6760256901" class="btn-appstore btn-appstore-lg" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -951,10 +948,10 @@ footer {
 <!-- ===================== TRUST BAR ===================== -->
 <div class="trust-bar">
   <div class="trust-inner">
-    <span class="trust-item t" data-de="100 % Offline" data-en="100 % Offline">100 % Offline</span>
-    <span class="trust-item t" data-de="Kein Account" data-en="No Account">Kein Account</span>
-    <span class="trust-item t" data-de="Keine Cloud" data-en="No Cloud">Keine Cloud</span>
-    <span class="trust-item t" data-de="DSGVO-konform" data-en="GDPR Compliant">DSGVO-konform</span>
+    <span class="trust-item t" data-de="Inventur offline" data-en="Offline inventory">Inventur offline</span>
+    <span class="trust-item t" data-de="Kein StockScan-Konto" data-en="No StockScan account">Kein StockScan-Konto</span>
+    <span class="trust-item t" data-de="Kein Tracking" data-en="No Tracking">Kein Tracking</span>
+    <span class="trust-item t" data-de="Native Apple-Käufe" data-en="Native Apple purchases">Native Apple-Käufe</span>
   </div>
 </div>
 
@@ -1009,7 +1006,7 @@ footer {
         <div class="feature-title-row">
           <span class="feature-title t" data-de="XLSX-Export" data-en="XLSX Export">XLSX-Export</span>
         </div>
-        <p class="feature-desc t" data-de="Fertige Inventur direkt als Excel exportieren." data-en="Export your finished inventory directly as Excel.">Fertige Inventur direkt als Excel exportieren.</p>
+        <p class="feature-desc t" data-de="CSV kostenlos exportieren; angereicherte XLSX-Berichte mit Pro erstellen." data-en="Export CSV for free; create enriched XLSX reports with Pro.">CSV kostenlos exportieren; angereicherte XLSX-Berichte mit Pro erstellen.</p>
       </div>
 
       <!-- 6 -->
@@ -1018,7 +1015,7 @@ footer {
         <div class="feature-title-row">
           <span class="feature-title t" data-de="Datenschutz" data-en="Privacy">Datenschutz</span>
         </div>
-        <p class="feature-desc t" data-de="Keine Registrierung, keine Cloud, keine Ubertragung." data-en="No registration, no cloud, no data transmission.">Keine Registrierung, keine Cloud, keine Ubertragung.</p>
+        <p class="feature-desc t" data-de="Inventurdaten bleiben lokal. Kein StockScan-Konto, kein Tracking und keine Analytics." data-en="Inventory data stays local. No StockScan account, tracking, or analytics.">Inventurdaten bleiben lokal. Kein StockScan-Konto, kein Tracking und keine Analytics.</p>
       </div>
 
       <!-- 7 -->
@@ -1212,8 +1209,8 @@ footer {
     <div class="screenshot-row reverse animate">
       <div class="screenshot-text">
         <span class="section-label t" data-de="DATENSCHUTZ" data-en="PRIVACY">DATENSCHUTZ</span>
-        <h3 class="t" data-de="Offline. Kein Account. Keine Cloud." data-en="Offline. No Account. No Cloud.">Offline. Kein Account. Keine Cloud.</h3>
-        <p class="t" data-de="Ihre Daten verlassen das Gerat nie. Keine Registrierung, kein Login. DSGVO-konform." data-en="Your data never leaves the device. No registration, no login. GDPR compliant.">Ihre Daten verlassen das Gerat nie. Keine Registrierung, kein Login. DSGVO-konform.</p>
+        <h3 class="t" data-de="Lokal. Kein StockScan-Konto." data-en="Local. No StockScan account.">Lokal. Kein StockScan-Konto.</h3>
+        <p class="t" data-de="Inventurdaten werden lokal gespeichert. Käufe laufen nativ über Apple; StockScan verwendet kein Tracking und keine Analytics." data-en="Inventory data is stored locally. Purchases are handled natively by Apple; StockScan uses no tracking or analytics.">Inventurdaten werden lokal gespeichert. Käufe laufen nativ über Apple; StockScan verwendet kein Tracking und keine Analytics.</p>
       </div>
       <div class="screenshot-img-wrap">
         <div class="screenshot-card">
@@ -1291,31 +1288,31 @@ footer {
       <div class="privacy-text animate">
         <span class="section-label t" data-de="DATENSCHUTZ" data-en="PRIVACY">DATENSCHUTZ</span>
         <h2 class="t" data-de="Ihre Daten bleiben bei Ihnen." data-en="Your Data Stays With You.">Ihre Daten bleiben bei Ihnen.</h2>
-        <p class="privacy-lead t" data-de="Offline. Kein Account. Keine Cloud. StockScan wurde von Grund auf datenschutzfreundlich entwickelt." data-en="Offline. No account. No cloud. StockScan was built from the ground up with privacy first.">Offline. Kein Account. Keine Cloud. StockScan wurde von Grund auf datenschutzfreundlich entwickelt.</p>
+        <p class="privacy-lead t" data-de="Inventurdaten bleiben lokal. StockScan funktioniert ohne StockScan-Konto, Tracking, Werbung oder Analytics." data-en="Inventory data stays local. StockScan works without a StockScan account, tracking, advertising, or analytics.">Inventurdaten bleiben lokal. StockScan funktioniert ohne StockScan-Konto, Tracking, Werbung oder Analytics.</p>
         <ul class="privacy-checklist">
           <li>
             <span class="check-circle">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
-            <span class="t" data-de="100 % Offline - keine Internetverbindung notig" data-en="100 % Offline - no internet connection required">100 % Offline - keine Internetverbindung notig</span>
+            <span class="t" data-de="Kerninventur offline nutzbar" data-en="Core inventory workflow works offline">Kerninventur offline nutzbar</span>
           </li>
           <li>
             <span class="check-circle">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
-            <span class="t" data-de="Kein Account - keine Registrierung, kein Login" data-en="No Account - no registration, no login">Kein Account - keine Registrierung, kein Login</span>
+            <span class="t" data-de="Kein StockScan-Konto – keine Registrierung, kein Login" data-en="No StockScan account — no registration or login">Kein StockScan-Konto – keine Registrierung, kein Login</span>
           </li>
           <li>
             <span class="check-circle">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
-            <span class="t" data-de="Keine Cloud - alle Daten bleiben auf Ihrem Gerat" data-en="No Cloud - all data stays on your device">Keine Cloud - alle Daten bleiben auf Ihrem Gerat</span>
+            <span class="t" data-de="Keine Inventurdaten auf Entwickler-Servern" data-en="No inventory data on developer servers">Keine Inventurdaten auf Entwickler-Servern</span>
           </li>
           <li>
             <span class="check-circle">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
-            <span class="t" data-de="DSGVO-konform - keine Daten werden ubermittelt" data-en="GDPR Compliant - no data is transmitted">DSGVO-konform - keine Daten werden ubermittelt</span>
+            <span class="t" data-de="Käufe und Wiederherstellungen nativ über Apple" data-en="Purchases and restores handled natively by Apple">Käufe und Wiederherstellungen nativ über Apple</span>
           </li>
         </ul>
       </div>
@@ -1323,7 +1320,7 @@ footer {
       <div class="privacy-box animate d2">
         <img src="img/icon.png" alt="StockScan Icon" class="privacy-box-icon">
         <h3 class="t" data-de="Datenschutz-Versprechen" data-en="Privacy Promise">Datenschutz-Versprechen</h3>
-        <p class="t" data-de="StockScan ubertragt keinerlei Daten. Keine Analyse, kein Tracking, keine Werbung. Ihre Inventurdaten gehoren nur Ihnen." data-en="StockScan transmits no data whatsoever. No analytics, no tracking, no advertising. Your inventory data belongs only to you.">StockScan ubertragt keinerlei Daten. Keine Analyse, kein Tracking, keine Werbung. Ihre Inventurdaten gehoren nur Ihnen.</p>
+        <p class="t" data-de="Inventurdaten bleiben lokal und werden nicht an Entwickler-Server gesendet. Keine Analytics, kein Tracking, keine Werbung. Käufe laufen nativ über Apple." data-en="Inventory data stays local and is not sent to developer servers. No analytics, tracking, or advertising. Purchases are handled natively by Apple.">Inventurdaten bleiben lokal und werden nicht an Entwickler-Server gesendet. Keine Analytics, kein Tracking, keine Werbung. Käufe laufen nativ über Apple.</p>
       </div>
     </div>
   </div>
@@ -1343,11 +1340,11 @@ footer {
       <span class="tag t" data-de="Mathematik-Eingabe (3x12)" data-en="Math Input (3x12)">Mathematik-Eingabe (3x12)</span>
       <span class="tag t" data-de="Menge 0 fur Ausverkauf" data-en="Quantity 0 for Sold Out">Menge 0 fur Ausverkauf</span>
       <span class="tag t" data-de="Farbcodierte Listen" data-en="Color-Coded Lists">Farbcodierte Listen</span>
-      <span class="tag">Excel-Export</span>
+      <span class="tag">CSV + XLSX</span>
       <span class="tag t" data-de="Kommentarfunktion" data-en="Comments">Kommentarfunktion</span>
       <span class="tag t" data-de="Duplikaterkennung" data-en="Duplicate Detection">Duplikaterkennung</span>
-      <span class="tag">100 % offline</span>
-      <span class="tag">DSGVO-konform / GDPR</span>
+      <span class="tag">Offline nutzbar</span>
+      <span class="tag t" data-de="Kein Tracking" data-en="No Tracking">Kein Tracking</span>
       <span class="tag t" data-de="Flexible Einheiten" data-en="Flexible Units">Flexible Einheiten</span>
       <span class="tag t" data-de="Mehrere Listen" data-en="Multiple Lists">Mehrere Listen</span>
     </div>
@@ -1405,7 +1402,7 @@ footer {
 
     <details class="animate">
       <summary class="t" data-de="Werden meine Daten in der Cloud gespeichert?" data-en="Is my data stored in the cloud?">Werden meine Daten in der Cloud gespeichert?</summary>
-      <p class="faq-answer t" data-de="Nein. 100 % offline. Alle Daten auf Ihrem iPhone. Keine Cloud, keine Server." data-en="No. 100 % offline. All data on your iPhone. No cloud, no servers.">Nein. 100 % offline. Alle Daten auf Ihrem iPhone. Keine Cloud, keine Server.</p>
+      <p class="faq-answer t" data-de="Inventur- und Stammdaten werden lokal gespeichert. Für Käufe und Wiederherstellungen kommuniziert StockScan nativ mit dem App Store; ein persönliches iCloud-Backup richtet sich nach Ihren Apple-Einstellungen." data-en="Inventory and master data is stored locally. StockScan communicates natively with the App Store for purchases and restores; personal iCloud backups depend on your Apple settings.">Inventur- und Stammdaten werden lokal gespeichert. Für Käufe und Wiederherstellungen kommuniziert StockScan nativ mit dem App Store; ein persönliches iCloud-Backup richtet sich nach Ihren Apple-Einstellungen.</p>
     </details>
 
     <details class="animate">
