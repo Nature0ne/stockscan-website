@@ -1,0 +1,13 @@
+Kurzbeschreibung
+StockScan ist die Inventur-App für iPhone, iPad und Apple Watch. Erfasse Barcodes und Mengen, arbeite frei oder mit fester Artikelvorgabe und exportiere deine Ergebnisse kostenlos als CSV. Pro ergänzt unter anderem Excel-Berichte und private iCloud-Synchronisierung.
+
+Release-Post
+Deine Inventur. Mit Überblick. StockScan 1.4 verbindet Erfassen, Listen und Daten in einem klaren Ablauf. Importiere feste Artikelvorgaben, prüfe offene Positionen vor dem Abschluss und nutze deine Vorgabe beim nächsten Mal erneut. Kostenlos starten: 1 aktive Inventur, bis zu 100 Artikel und unbegrenzter CSV-Export.
+
+Werkstatt-Post
+Material im Regal. Mengen im Blick. Scanne Artikel, berechne Gebinde direkt in der App und nimm deinen Bestand als CSV mit. Für Lager, Werkstatt und Servicefahrzeug – mit einer Kerninventur, die auch offline funktioniert.
+
+Pro-Post
+Für deine regelmäßige Inventur: StockScan Pro ergänzt unbegrenzte Listen und Artikel, Fast Scan, angereicherte Excel-Berichte, Soll-/Ist-Auswertung und ganze Zähllisten auf der Apple Watch. Optional hält privater iCloud-Sync deine eigenen Geräte auf demselben Stand.
+
+https://apps.apple.com/app/id6760256901

@@ -1,0 +1,117 @@
+[
+  {
+    "file": "01-inventory-de-1320x2868.png",
+    "bytes": 345416,
+    "sha256": "d350fdab3a3e2a78f76c9f2625661a6a2426bf3e5c1132c81ef391655ce56523"
+  },
+  {
+    "file": "01-inventory-en-1320x2868.png",
+    "bytes": 339852,
+    "sha256": "026785f0eebde6034afb1112652e696a0d1500fb6dd37cdced19546b23f90953"
+  },
+  {
+    "file": "02-quantity-de-1320x2868.png",
+    "bytes": 274002,
+    "sha256": "72631127c2f95d96bf1a6b59052b930c22691052ebd5253a783b3b3b18157750"
+  },
+  {
+    "file": "02-quantity-en-1320x2868.png",
+    "bytes": 270803,
+    "sha256": "399e8289933451078bd6a2200d2306a0d5236c8177c34950b2404a518886155d"
+  },
+  {
+    "file": "03-review-de-1320x2868.png",
+    "bytes": 387506,
+    "sha256": "e7736ca0e30a0724708d0e40c7f3ba9b6ff7f8fe76b161568597f63a4f8e7319"
+  },
+  {
+    "file": "03-review-en-1320x2868.png",
+    "bytes": 374433,
+    "sha256": "40681905d893167f72cafdb79dddaca3a6eb0eb1f6ac5a161129291cc014d858"
+  },
+  {
+    "file": "04-data-de-1320x2868.png",
+    "bytes": 327626,
+    "sha256": "91f7af4d7fc0190c0b8cd4abc1b1ad5fc3bbffcaa228e7785aaa3f6e25ce36bf"
+  },
+  {
+    "file": "04-data-en-1320x2868.png",
+    "bytes": 300584,
+    "sha256": "ccf85bcce1c7a326275b47d62b285810a11a49b132b2746028e2b14eb8f7a523"
+  },
+  {
+    "file": "05-export-de-1320x2868.png",
+    "bytes": 469711,
+    "sha256": "a6ecd2ff4e128d0837223026e8e61c84026105a732f01c32022c03f996c69c4f"
+  },
+  {
+    "file": "05-export-en-1320x2868.png",
+    "bytes": 442117,
+    "sha256": "7aa3c2a8ef09267af6649483501be1b77c9386335c7d903e9d2a49c8dce947d8"
+  },
+  {
+    "file": "06-lists-de-1320x2868.png",
+    "bytes": 278473,
+    "sha256": "4d0dc298605881c8f2420aa53c9c512d29c153b3547310555194a0ecda4d5d45"
+  },
+  {
+    "file": "06-lists-en-1320x2868.png",
+    "bytes": 268605,
+    "sha256": "5895b28698781d486aed33bc98a42b2493125d4345d3ee2075dcd1db2b95ef04"
+  },
+  {
+    "file": "StockScan-1.4.0-Marketing.zip",
+    "bytes": 9596789,
+    "sha256": "3e1a0ddd5eaba48e5d5b211558804540e45f6c40895e2a489a325afa0b3369e1"
+  },
+  {
+    "file": "copy-de.txt",
+    "bytes": 1187,
+    "sha256": "8058c2d27c03b9bbfa8834305a68effb3a9fafecd9716f30d49ab3299855cc69"
+  },
+  {
+    "file": "copy-en.txt",
+    "bytes": 1069,
+    "sha256": "eac35a62d66d57949902d49729551ecc96179f5d3f2235f5b54f6842e0a83b09"
+  },
+  {
+    "file": "release-banner-de.png",
+    "bytes": 130066,
+    "sha256": "87edfa24b82dbe4584466e1919963542c807b18a97a9fb16730e6b54201bc5cd"
+  },
+  {
+    "file": "release-banner-en.png",
+    "bytes": 129256,
+    "sha256": "ac410f082a0d9beb88d14ebfa35ff77dd003357b7dc0ad911ddea3c34fa9e487"
+  },
+  {
+    "file": "social-de.jpg",
+    "bytes": 63868,
+    "sha256": "67f0dc4b717ae0ad44f828ab4b93bf1938602053ee4da14bbdfc2990da592767"
+  },
+  {
+    "file": "social-en.jpg",
+    "bytes": 63132,
+    "sha256": "d0d3acaa937aa734d492116c5802eeeb526394f1ddbb51884cdf19936c6ebc4e"
+  },
+  {
+    "file": "square-de-1080x1080.png",
+    "bytes": 171375,
+    "sha256": "c6ad0b6385e887d092b9eec48f5eafb22b0b06ac986fcb0714ab4e560e083220"
+  },
+  {
+    "file": "square-en-1080x1080.png",
+    "bytes": 166364,
+    "sha256": "afff76e48bea86e10014f33d5c49e6e59d4a9a6094766c6b6a864e184fce1860"
+  },
+  {
+    "file": "story-de-1080x1920.png",
+    "bytes": 215358,
+    "sha256": "3fe4788dbada1920ea7fed309f58cfcf369423e4e3596d3e20fc5fbb0c620a22"
+  },
+  {
+    "file": "story-en-1080x1920.png",
+    "bytes": 208527,
+    "sha256": "2e80d7c6ade31d042d66e409ea76c18ecf81039884eb377033af1ff0dfbcc6c5"
+  }
+]

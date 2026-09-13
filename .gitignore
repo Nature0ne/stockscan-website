@@ -1,1 +1,7 @@
-*.png
+.DS_Store
+node_modules/
+__pycache__/
+artifacts/
+# Preserve original captures locally; publish the optimized equivalents.
+assets/screens/*.png
+assets/workshop.png
