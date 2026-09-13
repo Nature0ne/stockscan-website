@@ -1,0 +1,13 @@
+Short description
+StockScan is the inventory app for iPhone, iPad and Apple Watch. Capture barcodes and quantities, count freely or follow a fixed checklist and export results as CSV for free. Pro adds tools including Excel reports and private iCloud sync.
+
+Release post
+Your inventory. Clearly in view. StockScan 1.4 brings Capture, Lists and Data into one clear workflow. Import fixed checklists, review open items before completion and reuse your checklist next time. Start free: 1 active inventory, up to 100 items and unlimited CSV exports.
+
+Workshop post
+Materials on the shelf. Quantities in view. Scan items, calculate packs right in the app and take your stock count with you as CSV. For storage, workshops and service vans, with core inventory that works offline.
+
+Pro post
+For your regular stocktake: StockScan Pro adds unlimited lists and items, Fast Scan, enriched Excel reports, target-versus-actual comparisons and complete count lists on Apple Watch. Optional private iCloud sync keeps your own devices in step.
+
+https://apps.apple.com/app/id6760256901
