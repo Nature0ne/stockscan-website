@@ -48,3 +48,5 @@ Rendering uses macOS Avenir Next and Georgia. The original app screenshots are n
 Content is aligned to the StockScan 1.4 code, localized release metadata and `FeatureAccessPolicy.swift`. Free: one active inventory and 100 different items, unlimited CSV, completion/history and Watch single-item counting. Pro: unlimited lists/items, Fast Scan, XLSX, templates, target/actual and history comparisons, difference reports, Watch lists and optional private iCloud sync. Family Sharing shares the entitlement, not inventories. Imported master data stays local. Device minimums: iOS/iPadOS 18, watchOS 10.
 
 The owner explicitly requested launch messaging without a preview label on 13 September 2026. Website publication does not submit or release the app in App Store Connect. No app source files are changed by this website project.
+
+Focused workflow regression: `node scripts/workflow-check.cjs` checks text overlap and horizontal clipping inside cards at 320, 390, 480, 481, 600, 601, 768 and 1440px in both languages. It uses `SITE_URL` and saves the 320px card screenshots in `artifacts/`.
