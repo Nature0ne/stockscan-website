@@ -1,0 +1,746 @@
+{
+  "prepared": "2026-10-17",
+  "source_campaign": "StockScan marketing/1.5.1",
+  "public_release_claim": null,
+  "policy": "Real native app captures. WebP conversion resizes/compresses only. Full-size compositions and creatives are byte-identical originals. Social derivatives contain complete approved artwork without cropping.",
+  "capture_build": {
+    "source_commit": "cb6905819cf817def6db2790f80ccb494a867605",
+    "xcode": "27.1 (27A9275)",
+    "sdk": "iphonesimulator27.1",
+    "app_version": "1.5.1",
+    "app_build": "36",
+    "production_source_edits": false
+  },
+  "screen_mapping": [
+    {
+      "website": "iphone-de-01-inventory.webp",
+      "native_state": "01-inventory",
+      "composition": "01-capture"
+    },
+    {
+      "website": "iphone-de-02-quantity.webp",
+      "native_state": "04-quantity",
+      "composition": "04-calculator"
+    },
+    {
+      "website": "iphone-de-03-review.webp",
+      "native_state": "02-review",
+      "composition": "02-review"
+    },
+    {
+      "website": "iphone-de-04-data.webp",
+      "native_state": "05-data",
+      "composition": "05-import"
+    },
+    {
+      "website": "iphone-de-05-export.webp",
+      "native_state": "03-export",
+      "composition": "03-export"
+    },
+    {
+      "website": "iphone-de-06-lists.webp",
+      "native_state": "06-history",
+      "composition": "06-repeat"
+    },
+    {
+      "website": "iphone-en-01-inventory.webp",
+      "native_state": "01-inventory",
+      "composition": "01-capture"
+    },
+    {
+      "website": "iphone-en-02-quantity.webp",
+      "native_state": "04-quantity",
+      "composition": "04-calculator"
+    },
+    {
+      "website": "iphone-en-03-review.webp",
+      "native_state": "02-review",
+      "composition": "02-review"
+    },
+    {
+      "website": "iphone-en-04-data.webp",
+      "native_state": "05-data",
+      "composition": "05-import"
+    },
+    {
+      "website": "iphone-en-05-export.webp",
+      "native_state": "03-export",
+      "composition": "03-export"
+    },
+    {
+      "website": "iphone-en-06-lists.webp",
+      "native_state": "06-history",
+      "composition": "06-repeat"
+    },
+    {
+      "website": "ipad-de-01-inventory.webp",
+      "native_state": "01-inventory",
+      "composition": "01-capture"
+    },
+    {
+      "website": "ipad-de-02-quantity.webp",
+      "native_state": "04-quantity",
+      "composition": "04-calculator"
+    },
+    {
+      "website": "ipad-de-03-review.webp",
+      "native_state": "02-review",
+      "composition": "02-review"
+    },
+    {
+      "website": "ipad-de-04-data.webp",
+      "native_state": "05-data",
+      "composition": "05-import"
+    },
+    {
+      "website": "ipad-de-05-export.webp",
+      "native_state": "03-export",
+      "composition": "03-export"
+    },
+    {
+      "website": "ipad-de-06-lists.webp",
+      "native_state": "06-history",
+      "composition": "06-repeat"
+    },
+    {
+      "website": "ipad-en-01-inventory.webp",
+      "native_state": "01-inventory",
+      "composition": "01-capture"
+    },
+    {
+      "website": "ipad-en-02-quantity.webp",
+      "native_state": "04-quantity",
+      "composition": "04-calculator"
+    },
+    {
+      "website": "ipad-en-03-review.webp",
+      "native_state": "02-review",
+      "composition": "02-review"
+    },
+    {
+      "website": "ipad-en-04-data.webp",
+      "native_state": "05-data",
+      "composition": "05-import"
+    },
+    {
+      "website": "ipad-en-05-export.webp",
+      "native_state": "03-export",
+      "composition": "03-export"
+    },
+    {
+      "website": "ipad-en-06-lists.webp",
+      "native_state": "06-history",
+      "composition": "06-repeat"
+    }
+  ],
+  "files": [
+    {
+      "file": "assets/screens/iphone-de-01-inventory.webp",
+      "bytes": 28654,
+      "sha256": "3e48d18072e7a81855501348e977cca5056ef3eadd201e759e45ba741c954087",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-de-01-inventory.png",
+      "source_sha256": "31e31f70309ea734905ddd3f3cc473ef1142ec2001e7d97821c2242abd632d2f",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/01-inventory-de-1320x2868.png",
+      "bytes": 384797,
+      "sha256": "e4a57dcda8817a7e5be4312df202eb75ace62d429271fe31f2018f001192ba31",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/01-capture.png",
+      "source_sha256": "e4a57dcda8817a7e5be4312df202eb75ace62d429271fe31f2018f001192ba31",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-de-02-quantity.webp",
+      "bytes": 32990,
+      "sha256": "6127bac41b81b7882d12808a608339a9d93d2b15b4fcf4dd54329923f4357cdd",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-de-04-quantity.png",
+      "source_sha256": "a66f73d725bfdc1e6db555bc275adecff4615328608018bbd4975cabc1dba037",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/02-quantity-de-1320x2868.png",
+      "bytes": 391723,
+      "sha256": "eee00a5890db91ac12cb14e486f5b80de26dd445583eeb7ccfc2cf1d621351d9",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/04-calculator.png",
+      "source_sha256": "eee00a5890db91ac12cb14e486f5b80de26dd445583eeb7ccfc2cf1d621351d9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-de-03-review.webp",
+      "bytes": 41336,
+      "sha256": "5d8a4788084ea2d5c5a4abec212d507ca1946a2b539cbab2410df69c7eda037b",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-de-02-review.png",
+      "source_sha256": "188820bbcd325cfaff6bc7db97b2a287ec3313fe3cc45371bfba598e59cbbdff",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/03-review-de-1320x2868.png",
+      "bytes": 442614,
+      "sha256": "e3f15cd250ee3f6c1c5185843fa0d3b67676fa3860931974ba36b31f76b403b4",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/02-review.png",
+      "source_sha256": "e3f15cd250ee3f6c1c5185843fa0d3b67676fa3860931974ba36b31f76b403b4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-de-04-data.webp",
+      "bytes": 42080,
+      "sha256": "edfe441702c1b88ecebd1ab0ee57128a682d12345a76ccf2d1c6d22771fa3067",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-de-05-data.png",
+      "source_sha256": "ed2b2ceef2f7a00837fa443a103b63b3c9bc6439a1f649aa35811dc61cbeefdd",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/04-data-de-1320x2868.png",
+      "bytes": 434407,
+      "sha256": "cf7d67289e9531177f957697f62442b386ce2162d91d90339e2b0a7510b1c4b3",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/05-import.png",
+      "source_sha256": "cf7d67289e9531177f957697f62442b386ce2162d91d90339e2b0a7510b1c4b3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-de-05-export.webp",
+      "bytes": 46248,
+      "sha256": "e3e178fb3d9ec5fd008f6ab99c495176724ed6b9bf452dca31696d797d125a2a",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-de-03-export.png",
+      "source_sha256": "317e837953823ecd951a681ecaaacc2caae7b148cf3bdc79b2bf38b5b0f43ad3",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/05-export-de-1320x2868.png",
+      "bytes": 511368,
+      "sha256": "8cf9cdcc2ce78f4fff94c1e085fe043fdf7644059d0573fe91f2f21f0c75bf2f",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/03-export.png",
+      "source_sha256": "8cf9cdcc2ce78f4fff94c1e085fe043fdf7644059d0573fe91f2f21f0c75bf2f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-de-06-lists.webp",
+      "bytes": 40802,
+      "sha256": "a2bdbda4bb0f7f7cb52a1a9cd7290db7d84c30b2e13e5a232b728b1c34a542a5",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-de-06-history.png",
+      "source_sha256": "a0dd8be59c5ff7826dd7010775b977fae4ca0303258f8c6cff298b4d879de64e",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/06-lists-de-1320x2868.png",
+      "bytes": 415131,
+      "sha256": "eb8b0c8cc37c843d34554cd3198c23ac7bc04895769a26e21b590142ae19f85d",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/06-repeat.png",
+      "source_sha256": "eb8b0c8cc37c843d34554cd3198c23ac7bc04895769a26e21b590142ae19f85d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-en-01-inventory.webp",
+      "bytes": 26694,
+      "sha256": "a406387d52e9cdbeccb70beb6827740c7acc10816980678960917c4289777e48",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-en-01-inventory.png",
+      "source_sha256": "184a8a63cee40a2823997d4facec3d9c0028bfa4293966595ca4b52d0b6b2241",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/01-inventory-en-1320x2868.png",
+      "bytes": 385974,
+      "sha256": "cfa93a71fb58a60fd77e72701adb3641a08caf6fcd157a3d8f41b3a13852948b",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/01-capture.png",
+      "source_sha256": "cfa93a71fb58a60fd77e72701adb3641a08caf6fcd157a3d8f41b3a13852948b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-en-02-quantity.webp",
+      "bytes": 30298,
+      "sha256": "3c160370e84e9fa29e8ec6046897e76d72c97e16f425381f7763c80f339f6943",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-en-04-quantity.png",
+      "source_sha256": "29cc6b91817c62303591d20192472bb9c6a841c4f612c56e5ad9772cf22c21ff",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/02-quantity-en-1320x2868.png",
+      "bytes": 399063,
+      "sha256": "509b2761f75e490af5597cd670098f0a9778a105ba06b9abbad6f792c4f1f6df",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/04-calculator.png",
+      "source_sha256": "509b2761f75e490af5597cd670098f0a9778a105ba06b9abbad6f792c4f1f6df",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-en-03-review.webp",
+      "bytes": 37168,
+      "sha256": "bf20685c04449d1503566bac58bf915a403297f685ea1a97452bddda2dec4eb1",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-en-02-review.png",
+      "source_sha256": "995f7582052ea35801685c5a3dfb8623fbbd7d1b51cd08ab63c384583692b6a2",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/03-review-en-1320x2868.png",
+      "bytes": 442813,
+      "sha256": "4fc3af0881923f3b5547bf7252ac397258c4ad36c6ebcb54614762bba9b26b78",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/02-review.png",
+      "source_sha256": "4fc3af0881923f3b5547bf7252ac397258c4ad36c6ebcb54614762bba9b26b78",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-en-04-data.webp",
+      "bytes": 38402,
+      "sha256": "ad6cb1431ff92bdbef2d21db65c61a5b30a97cb5a929a19670b2dfd3183eb19d",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-en-05-data.png",
+      "source_sha256": "aa805788f8aa5587bb400f2586dfd225a2252c38a383a7c37211a4e29094d6b8",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/04-data-en-1320x2868.png",
+      "bytes": 411510,
+      "sha256": "09e1457c06696ab72be0425951af6292d85c0fe032a6df33d79c4afbad40f0d8",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/05-import.png",
+      "source_sha256": "09e1457c06696ab72be0425951af6292d85c0fe032a6df33d79c4afbad40f0d8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-en-05-export.webp",
+      "bytes": 41298,
+      "sha256": "112bc92d804a712efa9cf0f8ab9b67d355f585c1eff0a1a2587f6be7e44a8bd7",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-en-03-export.png",
+      "source_sha256": "694705460400802e2dc1d443cdf1a16350808c95e66214203566609d61454543",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/05-export-en-1320x2868.png",
+      "bytes": 488078,
+      "sha256": "c41e4ce7dd607bea4f5d018c6c57ddff797665408a070dfcb80224650891c34f",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/03-export.png",
+      "source_sha256": "c41e4ce7dd607bea4f5d018c6c57ddff797665408a070dfcb80224650891c34f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/iphone-en-06-lists.webp",
+      "bytes": 36284,
+      "sha256": "c0a96af3fb46d18511b871128116f45d0f853f4780f54abb18c4b5b3bb089b3a",
+      "width": 660,
+      "height": 1435,
+      "source": "marketing/1.5.1/raw/iphone/marketing-en-06-history.png",
+      "source_sha256": "d230fbc65403b3815802a75e05531945f24e928c1f17fe339a8a35556f6c3076",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/06-lists-en-1320x2868.png",
+      "bytes": 413859,
+      "sha256": "39ff134eaabcd35708b7d04dd7dfbb0a6a6833a786ecb40685dbdfa392254bf3",
+      "width": 1320,
+      "height": 2868,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/06-repeat.png",
+      "source_sha256": "39ff134eaabcd35708b7d04dd7dfbb0a6a6833a786ecb40685dbdfa392254bf3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-de-01-inventory.webp",
+      "bytes": 44248,
+      "sha256": "a176db7c73654d33a3df521676f66f801da263dc46ea41b8c01644c3b232747c",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-de-01-inventory.png",
+      "source_sha256": "385087614fa512c4735e6b3de88a9d51c2a170c78ccf5d136ee3d6fd85bb0de8",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-de-01-inventory-2064x2752.png",
+      "bytes": 429215,
+      "sha256": "6c77fe1d55f5025d9df0b1e6564d5f8f0c3975d9b08d01f33fcc677f2fc43726",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/de/ipad-13/01-capture.png",
+      "source_sha256": "6c77fe1d55f5025d9df0b1e6564d5f8f0c3975d9b08d01f33fcc677f2fc43726",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-de-02-quantity.webp",
+      "bytes": 46308,
+      "sha256": "b5256f6598ce4c92816aa9fce61b511a6e7d1e99e79cfea6b8725a0d8e340d8a",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-de-04-quantity.png",
+      "source_sha256": "64caff464be9f6629895151fc7febe7a3aa6a66a990102f2480f98a27f02c3f8",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-de-02-quantity-2064x2752.png",
+      "bytes": 415716,
+      "sha256": "2633a650799dc801889447f957ffca80cbecaa4ccb4d5ea857d7939afc2c959e",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/de/ipad-13/04-calculator.png",
+      "source_sha256": "2633a650799dc801889447f957ffca80cbecaa4ccb4d5ea857d7939afc2c959e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-de-03-review.webp",
+      "bytes": 53036,
+      "sha256": "d36a1acf83aede54ce3ec294dc94a9e4658b6ce11d769495d57b95b877e6a2c0",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-de-02-review.png",
+      "source_sha256": "c74a6decace39f2d5baae17e008f8bde191e3820e3ad86d7d4a796a2f164d41f",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-de-03-review-2064x2752.png",
+      "bytes": 446096,
+      "sha256": "2ca774fa890beec1104a18ca836c627c4fd70f62eba746011eed4727b364e0d1",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/de/ipad-13/02-review.png",
+      "source_sha256": "2ca774fa890beec1104a18ca836c627c4fd70f62eba746011eed4727b364e0d1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-de-04-data.webp",
+      "bytes": 24846,
+      "sha256": "44caf6a60c736f38a15ca966c6a07ed0d01be0e3f6376d5c51749ccfc0dade3e",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-de-05-data.png",
+      "source_sha256": "5a055f4a231073bcf55e1da7156079b45f2f387b076bef2546530f22797b16ba",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-de-04-data-2064x2752.png",
+      "bytes": 295447,
+      "sha256": "35c1d3e2bff680b7fa41e0898a615ef73078766ae1f6bab96cb483ab10a1fb15",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/de/ipad-13/05-import.png",
+      "source_sha256": "35c1d3e2bff680b7fa41e0898a615ef73078766ae1f6bab96cb483ab10a1fb15",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-de-05-export.webp",
+      "bytes": 52656,
+      "sha256": "8c7abba2b80421ea4078554a32beb220022617e46e353ae8eb1cd0b432f24cf6",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-de-03-export.png",
+      "source_sha256": "b90d3dc64bc3b8078194789af76de0ea2eab67929958596487857b5447a3367b",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-de-05-export-2064x2752.png",
+      "bytes": 455552,
+      "sha256": "86a600d4c3a8ca9bbe05a6461bbc05fd7377e4911097b18a0e475714fcd2f3b1",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/de/ipad-13/03-export.png",
+      "source_sha256": "86a600d4c3a8ca9bbe05a6461bbc05fd7377e4911097b18a0e475714fcd2f3b1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-de-06-lists.webp",
+      "bytes": 33720,
+      "sha256": "2d4e83ec6109367dd8c0cff4770e9663dde5b868f98a28720802d2d82eb8bd64",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-de-06-history.png",
+      "source_sha256": "c1c38c5f8009ceb90d211d77071ff59772253bed5d0194036f9e7584516ac46c",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-de-06-lists-2064x2752.png",
+      "bytes": 364823,
+      "sha256": "dd9c8c400a5b4eebc30e311a00958db724af4dc418aedb1f3746fefc410a6702",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/de/ipad-13/06-repeat.png",
+      "source_sha256": "dd9c8c400a5b4eebc30e311a00958db724af4dc418aedb1f3746fefc410a6702",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-en-01-inventory.webp",
+      "bytes": 42168,
+      "sha256": "a5613bc28987beed8eb690f86dc990b8e047f4f78999a80a6e40c6d0101a7cc4",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-en-01-inventory.png",
+      "source_sha256": "35d6840acf3eab1f54e0dc166af77e329ef682fb308d2b98844081753dbda439",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-en-01-inventory-2064x2752.png",
+      "bytes": 407663,
+      "sha256": "94cbe48b4cd325167fc8348f0d503ed0efdc1fafcf01ca9c94dfac3aca940599",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/en/ipad-13/01-capture.png",
+      "source_sha256": "94cbe48b4cd325167fc8348f0d503ed0efdc1fafcf01ca9c94dfac3aca940599",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-en-02-quantity.webp",
+      "bytes": 43730,
+      "sha256": "4cee22d11ce06134a9a2455893a0ecd7cb86690985e1e9d7731475cd0ea39dfe",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-en-04-quantity.png",
+      "source_sha256": "11c068a484eb4e0f95b65bcec8c463c274f23fb3c8d379176eea5a1b47d93d54",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-en-02-quantity-2064x2752.png",
+      "bytes": 403326,
+      "sha256": "65d0a393c8c8b4993da8a3c70996875bdf619a2881ff593463afb5592edfbefe",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/en/ipad-13/04-calculator.png",
+      "source_sha256": "65d0a393c8c8b4993da8a3c70996875bdf619a2881ff593463afb5592edfbefe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-en-03-review.webp",
+      "bytes": 50756,
+      "sha256": "312db08e435adf153d8ab1efdec8365f69487e60bac97957aca944370fc14ea6",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-en-02-review.png",
+      "source_sha256": "3f1b18ea5cb480adad9a3efe295b3b15f04a386d559c42ba21ed6ca89c7b92e0",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-en-03-review-2064x2752.png",
+      "bytes": 450329,
+      "sha256": "0513e7bba3aed1fb7fc3f09bace7d1fbe9deafa62009bae12ec61da9792bcd7c",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/en/ipad-13/02-review.png",
+      "source_sha256": "0513e7bba3aed1fb7fc3f09bace7d1fbe9deafa62009bae12ec61da9792bcd7c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-en-04-data.webp",
+      "bytes": 22866,
+      "sha256": "60dc0e14c0d3107583f768cec5812e04bb6599b1d3337e327d1dc1624e6d4459",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-en-05-data.png",
+      "source_sha256": "30ffd1031c610ea2947ed0763623bc281ba65a95a856d007b53c6bba66b6f582",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-en-04-data-2064x2752.png",
+      "bytes": 294305,
+      "sha256": "f3003bcbc88b627e15a198b174a7f05c82640e3ab064ab3b058239078abc5e1f",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/en/ipad-13/05-import.png",
+      "source_sha256": "f3003bcbc88b627e15a198b174a7f05c82640e3ab064ab3b058239078abc5e1f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-en-05-export.webp",
+      "bytes": 49276,
+      "sha256": "3bd725447306b0661687b09a2567aa98dbec3cca0f180918ece58e604f8461bf",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-en-03-export.png",
+      "source_sha256": "be8dc0bda7469dbd5c8fd8c407fa6267caacda53b6c8178cf60dea558c7c405d",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-en-05-export-2064x2752.png",
+      "bytes": 434867,
+      "sha256": "31a0e6058ea80326e3259bc697a9f986c98dc9ef427b94d1abd42cb2a95d984c",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/en/ipad-13/03-export.png",
+      "source_sha256": "31a0e6058ea80326e3259bc697a9f986c98dc9ef427b94d1abd42cb2a95d984c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/screens/ipad-en-06-lists.webp",
+      "bytes": 30844,
+      "sha256": "a21b7ed26f0f7cab6050fea427d8f33bc98237e29ba76d1a947aba5668833c14",
+      "width": 1000,
+      "height": 1333,
+      "source": "marketing/1.5.1/raw/ipad/marketing-en-06-history.png",
+      "source_sha256": "e146eb967358432e00646107376f67c13989b871fa90ec77f8b53d0354e74669",
+      "transformation": "Lanczos resize; WebP quality 88, method 6"
+    },
+    {
+      "file": "assets/marketing/ipad-en-06-lists-2064x2752.png",
+      "bytes": 351581,
+      "sha256": "99e9f7a99035b91b140673f0fd7e5042e0246db1f1a1b38b386c1ebb034da037",
+      "width": 2064,
+      "height": 2752,
+      "source": "marketing/1.5.1/open-assets/exports/ipad/en/ipad-13/06-repeat.png",
+      "source_sha256": "99e9f7a99035b91b140673f0fd7e5042e0246db1f1a1b38b386c1ebb034da037",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/marketing/header-de.png",
+      "bytes": 163640,
+      "sha256": "93ee54eebf666b6508b85807c408bbd1cc002428145055d46ed2ce29012b6046",
+      "width": 3840,
+      "height": 1646,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/de/header.png",
+      "source_sha256": "93ee54eebf666b6508b85807c408bbd1cc002428145055d46ed2ce29012b6046",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/marketing/search-de.png",
+      "bytes": 454920,
+      "sha256": "1f46ad229e2f694910c3abd17ea51cb8a2224e031fe054b8f2088ef6aef116b3",
+      "width": 3840,
+      "height": 2560,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/de/search.png",
+      "source_sha256": "1f46ad229e2f694910c3abd17ea51cb8a2224e031fe054b8f2088ef6aef116b3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/marketing/release-banner-de.png",
+      "bytes": 87879,
+      "sha256": "18242d521e674528a8f2365b725cf412ff164f17d1fde1de7a3f8c87b7fd8635",
+      "width": 1600,
+      "height": 900,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/de/header.png",
+      "source_sha256": "93ee54eebf666b6508b85807c408bbd1cc002428145055d46ed2ce29012b6046",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/social-de.jpg",
+      "bytes": 32072,
+      "sha256": "8764b246876deaff64a80a1ef8eefdc74361bef848a4c8fc4168092fdeaed4f7",
+      "width": 1200,
+      "height": 630,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/de/header.png",
+      "source_sha256": "93ee54eebf666b6508b85807c408bbd1cc002428145055d46ed2ce29012b6046",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/square-de-1080x1080.png",
+      "bytes": 112298,
+      "sha256": "b85291b923bf901c0c04b2c8526b96baacf9e8129c56baed33b4a11f3f2f356c",
+      "width": 1080,
+      "height": 1080,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/de/search.png",
+      "source_sha256": "1f46ad229e2f694910c3abd17ea51cb8a2224e031fe054b8f2088ef6aef116b3",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/story-de-1080x1920.png",
+      "bytes": 310251,
+      "sha256": "5ea59441a607a989e3ff5f19a0c3e11ddfdc33abcd8f8ce703cac6a098ea8324",
+      "width": 1080,
+      "height": 1920,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/de/iphone-large/01-capture.png",
+      "source_sha256": "e4a57dcda8817a7e5be4312df202eb75ace62d429271fe31f2018f001192ba31",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/header-en.png",
+      "bytes": 154303,
+      "sha256": "00384030b016ecc7b54510d8515ef1e83b350d97d44e0fb7112f6c0ac5485086",
+      "width": 3840,
+      "height": 1646,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/en/header.png",
+      "source_sha256": "00384030b016ecc7b54510d8515ef1e83b350d97d44e0fb7112f6c0ac5485086",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/marketing/search-en.png",
+      "bytes": 423895,
+      "sha256": "39ded934cab7f3c8343269535bccfb39fd667bc836206156ac8a1d1de4b1fc9a",
+      "width": 3840,
+      "height": 2560,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/en/search.png",
+      "source_sha256": "39ded934cab7f3c8343269535bccfb39fd667bc836206156ac8a1d1de4b1fc9a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "assets/marketing/release-banner-en.png",
+      "bytes": 80987,
+      "sha256": "d15abf12a061a58ab11cbd624168709fe6391c3c0697c1a374ef022abf5f4972",
+      "width": 1600,
+      "height": 900,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/en/header.png",
+      "source_sha256": "00384030b016ecc7b54510d8515ef1e83b350d97d44e0fb7112f6c0ac5485086",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/social-en.jpg",
+      "bytes": 27670,
+      "sha256": "ecd4715425a2a49d684a32aa5375fd5595ebf815353418aeedcdec6d1fde980d",
+      "width": 1200,
+      "height": 630,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/en/header.png",
+      "source_sha256": "00384030b016ecc7b54510d8515ef1e83b350d97d44e0fb7112f6c0ac5485086",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/square-en-1080x1080.png",
+      "bytes": 105294,
+      "sha256": "e96a90d271a5d2479b14fda194e7b4228d0903d90a8d20146a15d96fcd466585",
+      "width": 1080,
+      "height": 1080,
+      "source": "marketing/1.5.1/open-assets/exports/creatives/en/search.png",
+      "source_sha256": "39ded934cab7f3c8343269535bccfb39fd667bc836206156ac8a1d1de4b1fc9a",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/story-en-1080x1920.png",
+      "bytes": 295272,
+      "sha256": "267bff7090524051d5c8b0da9cee85669e0fa1c5c4098479113f4ffbed895c0c",
+      "width": 1080,
+      "height": 1920,
+      "source": "marketing/1.5.1/open-assets/exports/iphone/en/iphone-large/01-capture.png",
+      "source_sha256": "cfa93a71fb58a60fd77e72701adb3641a08caf6fcd157a3d8f41b3a13852948b",
+      "transformation": "Complete artwork contained in canvas; Lanczos resize"
+    },
+    {
+      "file": "assets/marketing/apple-frames-license.rtf",
+      "bytes": 14462,
+      "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+      "source": "marketing/1.5.1/open-assets/public/apple/license.rtf",
+      "source_sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a",
+      "transformation": "byte-identical copy"
+    }
+  ]
+}

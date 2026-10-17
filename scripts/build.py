@@ -8,23 +8,23 @@ STORE = 'https://apps.apple.com/app/id6760256901'
 APPLE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.9 12.8c0-2 1.6-3 1.7-3.1-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.9-3.4.9-.7 0-1.7-.9-2.8-.8-1.5 0-2.9.9-3.7 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 1.9-1.1 2.6-2.2.8-1.2 1.1-2.4 1.2-2.5-.1 0-2.1-.8-2.1-3.9zM15.6 6.5c.6-.8 1.1-1.9 1-3-.9.1-2.1.6-2.8 1.4-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3z"/></svg>'
 C = {
 'de': {
- 'title':'StockScan – Deine Inventur. Mit Überblick.',
- 'description':'Barcodes scannen, Mengen zählen und Inventuren abschließen. Freie und feste Inventuren, kostenloser CSV-Export und Pro mit Excel, Watch-Listen und privatem iCloud-Sync.',
+ 'title':'StockScan – Bestand zählen. CSV & Excel.',
+ 'description':'Bestand zählen, offene Artikel prüfen und Ergebnisse weitergeben. Inventur für iPhone, iPad und Apple Watch. CSV kostenlos, Excel-Berichte mit Pro.',
  'nav':['Funktionen','Die App','Free & Pro','Support'],
  'download':'Kostenlos laden', 'store':'Im App Store laden', 'skip':'Zum Inhalt', 'media':'Presse & Medien', 'privacy':'Datenschutz', 'imprint':'Impressum',
  'hero_label':'Inventur für iPhone, iPad & Apple Watch',
- 'hero_title':'Deine Inventur.<br>Mit <em>Überblick.</em>',
- 'hero_text':'Vom ersten Scan bis zum fertigen Bericht. Zähle, was da ist. Behalte im Blick, was fehlt. Und mach aus deinem Bestand eine klare Liste.',
+ 'hero_title':'Bestand zählen.<br>Offene Artikel <em>prüfen.</em>',
+ 'hero_text':'Scanne Barcodes oder erfasse eigene Artikelnummern. Zähle deinen Bestand, prüfe offene Positionen und gib das Ergebnis als Tabelle weiter. Für Lager, Werkstatt und Servicefahrzeug.',
  'hero_secondary':'So funktioniert’s', 'hero_small':'1 aktive Inventur · 100 Artikel · CSV-Export kostenlos',
- 'chip_top':'Frei zählen. Oder nach Plan.', 'chip_sub':'Dein Bestand. Dein Ablauf.', 'chip_bottom':'Gezählt. Bereit zum Teilen.', 'chip_bottom_sub':'CSV kostenlos · Excel mit Pro',
+ 'chip_top':'Frei zählen. Oder nach Plan.', 'chip_sub':'Dein Bestand. Dein Ablauf.', 'chip_bottom':'Dein Ergebnis weitergeben.', 'chip_bottom_sub':'CSV kostenlos · Excel mit Pro',
  'screen_note':'ECHTE APP-ANSICHT · BEISPIELDATEN',
- 'benefits':['Kerninventur auch offline','Ohne StockScan-Konto','CSV kostenlos exportieren','Deutsch & Englisch'],
- 'workflow_label':'Ein Ablauf. Alles im Blick.', 'workflow_title':'Weniger Zettel.<br>Mehr <em>Klarheit.</em>', 'workflow_intro':'Drei klare Bereiche begleiten dich durch deine Inventur: Erfassen, Listen und Daten.',
+ 'benefits':['Kerninventur auch offline','Ohne StockScan-Konto','CSV kostenlos exportieren','App in 8 Sprachen'],
+ 'workflow_label':'Ein Ablauf. Alles im Blick.', 'workflow_title':'Zählen. Prüfen.<br><em>Weitergeben.</em>', 'workflow_intro':'Vom ersten Artikel bis zum Export: ein Ablauf, bei dem offene Positionen sichtbar bleiben.',
  'steps':[
-  ['Erfassen','Scan rein.<br>Menge dazu.','Scanne einen Barcode oder gib die Artikelnummer ein. Rechne Gebinde direkt aus und speichere Menge, Einheit und Kommentar.','02-quantity'],
-  ['Listen','Alles gezählt?<br>Siehst du sofort.','Organisiere deine Bestände. Mit fester Vorgabe erkennst du offene Artikel; Pro ergänzt die Soll-/Ist-Auswertung.','01-inventory'],
-  ['Daten','Dein Ergebnis.<br>Zum Weiterarbeiten.','Artikelstamm importieren, Inventur abschließen, Bericht teilen. CSV ist kostenlos, angereicherte Excel-Berichte gibt’s mit Pro.','05-export']],
- 'new_label':'Neu in 1.4', 'new_title':'Zähle frei.<br>Oder mit <em>festem Plan.</em>',
+  ['Zählen','Artikel erfassen.<br>Bestand zählen.','Scanne einen Barcode oder gib die Artikelnummer ein. Übernimm passende Namen und Einheiten aus deinem importierten Artikelstamm.','01-inventory'],
+  ['Prüfen','Offene Artikel.<br>Bewusst klären.','Bei einer festen Inventur zählst du jeden Pflichtartikel oder überspringst ihn ausdrücklich. Erst dann schließt du die Inventur ab.','03-review'],
+  ['Weitergeben','CSV kostenlos.<br>Excel mit Pro.','Exportiere deine Zählung und arbeite in deiner Tabellenkalkulation weiter. CSV ist kostenlos und unbegrenzt; XLSX-Berichte ergänzt Pro.','05-export']],
+ 'new_label':'Feste Artikelvorgaben', 'new_title':'Zähle frei.<br>Oder mit <em>festem Plan.</em>',
  'new_text':'Jede Inventur beginnt anders. Starte direkt mit den Artikeln vor dir – oder übernimm eine feste Artikelvorgabe aus Excel, CSV oder TSV.',
  'new_rows':[
   ['Deine Vorgabe. Deine Reihenfolge.','Scanne Vorgabeartikel in beliebiger Reihenfolge. Zusätzliche Artikel werden gesondert gekennzeichnet.'],
@@ -38,13 +38,13 @@ C = {
   ['Rechnen beim Zählen','7 × 8 statt 56 einzutippen. Mengenberechnung, eigene Einheiten und Kommentare sind direkt in der Erfassung erreichbar.',False],
   ['Den Artikelstamm mitnehmen','Importiere Produkte sowie Hersteller- und Lieferantenzuordnungen. Vor der Übernahme prüfst du die erkannten Daten.',False],
   ['Abschließen und nachsehen','Bewahre den gezählten Stand in der unveränderlichen Historie. Bestehende Daten bleiben auch ohne Pro sichtbar.',False],
-  ['Schneller im Scanfluss','Fast Scan ergänzt direkte Wiederholungszählungen und einstellbare Zählschritte für deine Gebinde.',True],
+  ['Schneller im Scanfluss','Fast Scan erhöht bekannte Artikel direkt um den eingestellten Zählschritt. Neue Artikel erfasst du weiterhin mit Menge und Einheit.',True],
   ['Fortschritt im Blick','Live Activities zeigen den Inventurfortschritt auf dem Sperrbildschirm und in der Dynamic Island unterstützter iPhones.',False],
   ['Import mit Unterstützung','Intelligente Spaltenerkennung mit Apple Intelligence auf unterstützten Geräten, wenn verfügbar. Die normale Erkennung bleibt erhalten.',False]],
  'gallery_label':'Ein Blick in die App','gallery_title':'Klar im Aufbau.<br>Nah an deiner Arbeit.',
- 'gallery_intro':'Echte Ansichten von StockScan 1.4 – mit Beispieldaten aus einer Werkstatt. Auf iPhone und iPad.',
+ 'gallery_intro':'Echte App-Ansichten mit fiktiven Beispieldaten: Artikel erfassen, offene Positionen prüfen und Ergebnisse exportieren. Auf iPhone und iPad.',
  'previous':'Vorherige App-Ansicht','next':'Nächste App-Ansicht',
- 'captions':['Inventur im Überblick','Mengen direkt berechnen','Vorgabeartikel prüfen','Daten übernehmen','CSV & Excel exportieren','Inventuren organisieren'],
+ 'captions':['Artikel erfassen und zählen','Mengen direkt berechnen','Offene Pflichtartikel prüfen','Daten übernehmen','CSV & Excel exportieren','Abgeschlossene Inventur wiederverwenden'],
  'ipad_label':'Deine Apple-Geräte', 'ipad_title':'Mehr Fläche auf dem iPad.<br>Ein Zähler am Handgelenk.',
  'ipad_text':'Nutze die native iPad-Oberfläche für deine Listen. Auf der Apple Watch zählst du einen Artikel kostenlos; Pro bringt ganze Inventurlisten ans Handgelenk. Bei unterbrochener Verbindung werden Änderungen bis zur Bestätigung durch das iPhone zwischengespeichert.',
  'price_label':'Free & StockScan Pro', 'price_title':'Klein anfangen.<br>Mit deinem Bestand <em>wachsen.</em>',
@@ -52,9 +52,9 @@ C = {
  'free_kicker':'Für den Anfang. Und mehr.', 'free_name':'StockScan Free','free_text':'Kostenlos laden und direkt loszählen.',
  'free_items':['1 aktive Inventur mit bis zu 100 unterschiedlichen Artikeln','Freie oder feste Inventur, Barcode-Scan und Mengenrechner','Produkt- und Herstellerdaten importieren','Abschluss und unveränderliche Historie','Unbegrenzter CSV-Export','Apple-Watch-Einzelzähler'],
  'pro_kicker':'Für deinen regelmäßigen Workflow','pro_name':'StockScan Pro','pro_text':'Als Monats- oder Jahresabo in der App erhältlich.',
- 'pro_items':['Unbegrenzte aktive Inventuren und Artikel','Fast Scan mit einstellbaren Zählschritten','Angereicherte XLSX-Exporte','Vorlagen und Soll-/Ist-Auswertung','Historienvergleich und Differenzberichte','Ganze Inventurlisten auf der Apple Watch','Freiwilliger privater iCloud-Sync eigener Geräte','Apple Family Sharing für das Pro-Abo'],
+ 'pro_items':['Free-Grenzen für aktive Inventuren und Artikel aufheben','Fast Scan mit einstellbaren Zählschritten','Excel-Berichte als XLSX exportieren','Vorlagen und Soll-/Ist-Auswertung','Historienvergleich und Differenzberichte','Ganze Inventurlisten auf der Apple Watch','Freiwilliger privater iCloud-Sync eigener Geräte','Apple Family Sharing für das Pro-Abo'],
  'pro_cta':'StockScan laden & Pro entdecken',
- 'price_note':'Preise und ein gegebenenfalls verfügbarer Probezeitraum werden vor dem Kauf im App Store angezeigt. Abos verlängern sich automatisch und sind über dein Apple-Konto kündbar. Frühere Käufer der kostenpflichtigen App behalten dauerhaft Pro. Deine vorhandenen Daten bleiben ohne Pro lesbar und als CSV exportierbar.',
+ 'price_note':'Preise und ein gegebenenfalls verfügbarer Probezeitraum werden vor dem Kauf im App Store angezeigt. Abos verlängern sich automatisch und sind über dein Apple-Konto kündbar. Berechtigte frühere Käufer der kostenpflichtigen App behalten dauerhaft Pro. Deine vorhandenen Daten bleiben ohne Pro lesbar und als CSV exportierbar.',
  'privacy_label':'Deine Daten bleiben deine Sache','privacy_title':'Lokal gespeichert.<br>Auf Wunsch <em>verbunden.</em>',
  'privacy_text':'Du brauchst kein StockScan-Konto. Deine Kerninventur arbeitet lokal – ohne Werbung und ohne Tracking in der App.',
  'privacy_points':[
@@ -63,44 +63,47 @@ C = {
   ['Abo teilen. Inventuren privat halten.','Apple Family Sharing teilt die Pro-Berechtigung mit deiner Familie. Es teilt keine Inventuren oder private iCloud-Datenbank.']],
  'faq_label':'Gut zu wissen','faq_title':'Noch eine Frage?', 'faq_text':'Hier sind die wichtigsten Antworten für deinen Start.', 'support_cta':'Zur Hilfe & zum Kontakt',
  'faqs':[
+  ['In welchen Sprachen gibt es die App?','StockScan ist auf Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch (Portugal), Niederländisch und Polnisch verfügbar. Wähle die App-Sprache in den Einstellungen oder verwende die Systemsprache. Die Website bietet Deutsch und Englisch.'],
   ['Was ist kostenlos enthalten?','Eine aktive Inventur mit bis zu 100 unterschiedlichen Artikeln, freie oder feste Erfassung, Mengenberechnung, Stammdatenimport, Abschluss, Historie, unbegrenzter CSV-Export und der Apple-Watch-Einzelzähler.'],
   ['Was unterscheidet freie und feste Inventuren?','Bei einer freien Inventur erfasst du die Artikel, die du vorfindest. Eine feste Inventur beginnt mit einer importierten Artikelvorgabe. Jeder Vorgabeartikel muss vor dem Abschluss gezählt oder ausdrücklich übersprungen sein. Zusätzliche Artikel werden gekennzeichnet.'],
-  ['Kann ich mit Excel und CSV arbeiten?','Ja. Importiere Produkt- und Herstellerdaten aus XLSX oder CSV. Feste Artikelvorgaben können zusätzlich als TSV vorliegen. CSV-Exporte sind kostenlos und unbegrenzt; angereicherte Excel-Berichte benötigen Pro. Numbers-Dateien exportierst du vorher als XLSX oder CSV.'],
+  ['Kann ich mit Excel und CSV arbeiten?','Ja. Der Import von XLSX und CSV ist innerhalb der Free-Grenzen kostenlos. Importiere Produkt- und Herstellerdaten aus XLSX oder CSV. Feste Artikelvorgaben können zusätzlich als TSV vorliegen. CSV-Exporte sind kostenlos und unbegrenzt; angereicherte Excel-Berichte benötigen Pro. Numbers-Dateien exportierst du vorher als XLSX oder CSV.'],
   ['Funktioniert StockScan ohne Internet?','Die Kerninventur funktioniert offline. Käufe, Wiederherstellungen und die freiwillige iCloud-Synchronisierung benötigen eine Verbindung zu Apples Diensten. Watch-Zählungen werden bei unterbrochener Verbindung zwischengespeichert.'],
   ['Welche Geräte werden unterstützt?','StockScan läuft auf iPhone und iPad ab iOS beziehungsweise iPadOS 18. Die Begleit-App für die gekoppelte Apple Watch setzt watchOS 10 oder neuer voraus. Live Activities, Dynamic Island und Apple Intelligence hängen zusätzlich vom unterstützten Gerät und der Systemverfügbarkeit ab.'],
   ['Was passiert, wenn ich Pro kündige?','Bestehende Inventurdaten bleiben sichtbar und als CSV exportierbar. Für neue Listen und Artikel gelten wieder die Free-Limits. Pro-Funktionen wie XLSX und iCloud-Sync benötigen ein aktives Pro-Recht. Frühere Käufer der kostenpflichtigen App behalten ihren dauerhaften Pro-Zugriff.']],
  'cta_title':'Die nächste Inventur?<br>Beginnt mit <em>einem Scan.</em>', 'cta_text':'StockScan kostenlos laden. Deine erste Liste anlegen. Und loszählen.',
  'footer_line':'Für Bestände, die du im Blick behalten willst.','compat':'iOS / iPadOS 18+ · watchOS 10+',
- 'media_title':'Material für<br>einen <em>klaren Auftritt.</em>', 'media_intro':'Offizielle StockScan-Materialien: echte App-Ansichten, fertige Motive und Texte für Website, Presse und Social Media. Auf Deutsch und Englisch.',
+ 'media_title':'Material für<br>einen <em>klaren Auftritt.</em>', 'media_intro':'Aktuelle StockScan-Materialien: echte App-Ansichten, fertige Motive und Texte für Website, Presse und Social Media. Auf Deutsch und Englisch.',
  'media_downloads':[
-  ['Das komplette Marketingpaket','24 App-Store-Motive für iPhone und iPad, deutsche und englische Banner, Social-Posts, Stories, Texte und Übersichtsbögen.','Marketingpaket laden','StockScan-1.4.0-Marketing.zip'],
-  ['Das Release-Motiv','StockScan 1.4 als PNG in 1600 × 900 Pixeln. Für Website, Newsletter und Präsentationen.','PNG herunterladen','release-banner-de.png'],
+  ['Das komplette Marketingpaket','24 aktuelle App-Motive für iPhone und iPad, vier Header- und Suchmotive sowie deutsche und englische Texte. Aufnahmen mit fiktiven Beispieldaten.','Marketingpaket laden','StockScan-Media-DE-EN-2026-10-17.zip'],
+  ['Header in Originalgröße','Breites Motiv in 3840 × 1646 Pixeln für Website und redaktionelle Beiträge.','PNG herunterladen','header-de.png'],
+  ['Such- und Kampagnenmotiv','Motiv in 3840 × 2560 Pixeln mit echten App-Ansichten und klarer CSV-/Pro-Kennzeichnung.','PNG herunterladen','search-de.png'],
+  ['Das Titelmotiv','Aktuelles StockScan-Motiv als PNG in 1600 × 900 Pixeln. Für Website, Newsletter und Präsentationen.','PNG herunterladen','release-banner-de.png'],
   ['Quadratischer Social-Post','Fertiges Motiv in 1080 × 1080 Pixeln mit echter App-Ansicht.','PNG herunterladen','square-de-1080x1080.png'],
   ['Story & Status','Hochformat in 1080 × 1920 Pixeln für Stories und Status-Beiträge.','PNG herunterladen','story-de-1080x1920.png'],
   ['Für geteilte Links','Social-Media-Grafik im Format 1200 × 630 Pixel. Für Link-Vorschauen und redaktionelle Beiträge.','JPG herunterladen','social-de.jpg']],
  'media_copy_title':'Texte, die du direkt nutzen kannst.',
  'media_copy':[
   ['Kurzbeschreibung','StockScan ist die Inventur-App für iPhone, iPad und Apple Watch. Erfasse Barcodes und Mengen, arbeite frei oder mit fester Artikelvorgabe und exportiere deine Ergebnisse kostenlos als CSV. Pro ergänzt unter anderem Excel-Berichte und private iCloud-Synchronisierung.'],
-  ['Release-Post','Deine Inventur. Mit Überblick. StockScan 1.4 verbindet Erfassen, Listen und Daten in einem klaren Ablauf. Importiere feste Artikelvorgaben, prüfe offene Positionen vor dem Abschluss und nutze deine Vorgabe beim nächsten Mal erneut. Kostenlos starten: 1 aktive Inventur, bis zu 100 Artikel und unbegrenzter CSV-Export.'],
+  ['Inventur-Post','Bestand zählen. Offene Artikel prüfen. Ergebnis weitergeben. StockScan begleitet deine Inventur vom ersten Artikel bis zum Export. Importiere eine feste Artikelliste oder starte frei. Kostenlos enthalten: 1 aktive Inventur, bis zu 100 unterschiedliche Artikel und unbegrenzter CSV-Export.'],
   ['Werkstatt-Post','Material im Regal. Mengen im Blick. Scanne Artikel, berechne Gebinde direkt in der App und nimm deinen Bestand als CSV mit. Für Lager, Werkstatt und Servicefahrzeug – mit einer Kerninventur, die auch offline funktioniert.'],
-  ['Pro-Post','Für deine regelmäßige Inventur: StockScan Pro ergänzt unbegrenzte Listen und Artikel, Fast Scan, angereicherte Excel-Berichte, Soll-/Ist-Auswertung und ganze Zähllisten auf der Apple Watch. Optional hält privater iCloud-Sync deine eigenen Geräte auf demselben Stand.']],
+  ['Pro-Post','Für deine regelmäßige Inventur: StockScan Pro hebt die Free-Grenzen für Listen und Artikel auf und ergänzt, Fast Scan, angereicherte Excel-Berichte, Soll-/Ist-Auswertung und ganze Zähllisten auf der Apple Watch. Optional hält privater iCloud-Sync deine eigenen Geräte auf demselben Stand.']],
  'media_terms':'Die Materialien dürfen zur Berichterstattung über StockScan und zur Bewerbung der App verwendet werden. App-Ansichten zeigen fiktive Beispieldaten. Bitte Pro-Kennzeichnungen und Einschränkungen bei Gerätefunktionen beibehalten. Markenrechte bleiben beim jeweiligen Rechteinhaber.',
 },
 'en': {
- 'title':'StockScan – Your inventory. Clearly in view.',
- 'description':'Scan barcodes, count quantities and complete inventories. Free and fixed inventories, free CSV export and Pro with Excel, Watch lists and private iCloud sync.',
+ 'title':'StockScan – Count stock. Export CSV & Excel.',
+ 'description':'Count stock, review uncounted items and share your results. Inventory for iPhone, iPad and Apple Watch. Free CSV exports, Excel reports with Pro.',
  'nav':['Features','The app','Free & Pro','Support'],'download':'Get it free','store':'Download on the App Store','skip':'Skip to content','media':'Press & media','privacy':'Privacy','imprint':'Legal notice',
- 'hero_label':'Inventory for iPhone, iPad & Apple Watch','hero_title':'Your inventory.<br>Clearly <em>in view.</em>',
- 'hero_text':'From the first scan to your finished report. Count what’s there. See what’s missing. Turn your stock into a list that makes sense.',
+ 'hero_label':'Inventory for iPhone, iPad & Apple Watch','hero_title':'Count your stock.<br>Review what’s <em>left.</em>',
+ 'hero_text':'Scan barcodes or enter your own item numbers. Count stock, check uncounted items and share the result as a spreadsheet. For storage, workshops and service vans.',
  'hero_secondary':'See how it works','hero_small':'1 active inventory · 100 items · Free CSV export',
- 'chip_top':'Count freely. Or follow a plan.','chip_sub':'Your stock. Your workflow.','chip_bottom':'Counted. Ready to share.','chip_bottom_sub':'Free CSV · Excel with Pro','screen_note':'REAL APP VIEW · SAMPLE DATA',
- 'benefits':['Core inventory works offline','No StockScan account','Free CSV exports','English & German'],
- 'workflow_label':'One workflow. All in view.','workflow_title':'Less paperwork.<br>More <em>clarity.</em>','workflow_intro':'Three clear workspaces take you through your inventory: Capture, Lists and Data.',
+ 'chip_top':'Count freely. Or follow a plan.','chip_sub':'Your stock. Your workflow.','chip_bottom':'Share your results.','chip_bottom_sub':'Free CSV · Excel with Pro','screen_note':'REAL APP VIEW · SAMPLE DATA',
+ 'benefits':['Core inventory works offline','No StockScan account','Free CSV exports','App in 8 languages'],
+ 'workflow_label':'One workflow. All in view.','workflow_title':'Count. Review.<br><em>Share.</em>','workflow_intro':'From the first item to your export: a workflow that keeps uncounted items in view.',
  'steps':[
-  ['Capture','Scan the code.<br>Add the quantity.','Scan a barcode or enter an item number. Calculate packs right in the app and save quantity, unit and comment.','02-quantity'],
-  ['Lists','All counted?<br>See for yourself.','Organise your stock. Fixed checklists show what’s still open; Pro adds target-versus-actual comparisons.','01-inventory'],
-  ['Data','Your results.<br>Ready for work.','Import product data, complete your inventory and share a report. CSV is free; enriched Excel reports come with Pro.','05-export']],
- 'new_label':'New in 1.4','new_title':'Count freely.<br>Or follow a <em>fixed plan.</em>',
+  ['Count','Capture items.<br>Count stock.','Scan a barcode or enter an item number. Use your imported product data to recognise matching names and units.','01-inventory'],
+  ['Review','Uncounted items.<br>A clear decision.','With a fixed checklist, count every required item or explicitly skip it. Complete your inventory once each one has been reviewed.','03-review'],
+  ['Share','Free CSV.<br>Excel with Pro.','Export your count and keep working in your spreadsheet app. CSV exports are free and unlimited; Pro adds XLSX reports.','05-export']],
+ 'new_label':'Fixed item checklists','new_title':'Count freely.<br>Or follow a <em>fixed plan.</em>',
  'new_text':'Every inventory starts differently. Begin with the items in front of you, or bring in a fixed checklist from Excel, CSV or TSV.',
  'new_rows':[
   ['Your checklist. Your order.','Scan required items in any order. Additional items are clearly marked separately.'],
@@ -114,13 +117,13 @@ C = {
   ['Calculate as you count','7 × 8 instead of typing 56. Quantity calculations, custom units and comments are right there in Capture.',False],
   ['Bring your product data','Import products and manufacturer or supplier mappings. Review the detected data before adding it.',False],
   ['Complete and look back','Keep an immutable record of your completed count. Existing inventory data stays readable even without Pro.',False],
-  ['Stay in your scanning flow','Fast Scan adds repeat counting and configurable count steps for your packs.',True],
+  ['Stay in your scanning flow','Fast Scan increments known items by your chosen count step. Capture new items with their quantity and unit as usual.',True],
   ['Keep progress in sight','Live Activities show inventory progress on the Lock Screen and in the Dynamic Island on supported iPhones.',False],
   ['A helping hand with imports','Intelligent column recognition uses Apple Intelligence on supported devices when available. Standard recognition stays available.',False]],
  'gallery_label':'Inside the app','gallery_title':'Clear by design.<br>Made for your work.',
- 'gallery_intro':'Real views of StockScan 1.4 with workshop sample data. On iPhone and iPad.',
+ 'gallery_intro':'Real app views with fictional sample data: capture items, review uncounted positions and export results. On iPhone and iPad.',
  'previous':'Previous app view','next':'Next app view',
- 'captions':['Inventory at a glance','Calculate quantities','Review required items','Bring in your data','Export CSV & Excel','Organise inventories'],
+ 'captions':['Capture and count items','Calculate quantities','Review uncounted required items','Bring in your data','Export CSV & Excel','Reuse a completed inventory'],
  'ipad_label':'Your Apple devices','ipad_title':'Room to work on iPad.<br>A counter on your wrist.',
  'ipad_text':'Use the native iPad interface for your lists. Count a single item on Apple Watch for free; Pro puts complete inventory lists on your wrist. When disconnected, changes are queued until your iPhone confirms them.',
  'price_label':'Free & StockScan Pro','price_title':'Start small.<br><em>Grow</em> with your inventory.',
@@ -128,9 +131,9 @@ C = {
  'free_kicker':'Start here. Keep going.','free_name':'StockScan Free','free_text':'Download for free and start counting.',
  'free_items':['1 active inventory with up to 100 different items','Free or fixed inventory, barcode scanning and quantity calculator','Product and manufacturer data imports','Completion and immutable history','Unlimited CSV exports','Apple Watch single-item counter'],
  'pro_kicker':'For your regular workflow','pro_name':'StockScan Pro','pro_text':'Available as a monthly or annual in-app subscription.',
- 'pro_items':['Unlimited active inventories and items','Fast Scan with adjustable count steps','Enriched XLSX exports','Templates and target-versus-actual comparisons','History comparisons and difference reports','Complete inventory lists on Apple Watch','Optional private iCloud sync across your own devices','Apple Family Sharing for your Pro subscription'],
+ 'pro_items':['Remove Free limits on active inventories and items','Fast Scan with adjustable count steps','Export Excel reports as XLSX','Templates and target-versus-actual comparisons','History comparisons and difference reports','Complete inventory lists on Apple Watch','Optional private iCloud sync across your own devices','Apple Family Sharing for your Pro subscription'],
  'pro_cta':'Get StockScan & discover Pro',
- 'price_note':'Prices and any available trial are shown in the App Store before purchase. Subscriptions renew automatically and can be cancelled through your Apple account. Previous buyers of the paid app keep permanent Pro access. Your existing data remains readable and exportable as CSV without Pro.',
+ 'price_note':'Prices and any available trial are shown in the App Store before purchase. Subscriptions renew automatically and can be cancelled through your Apple account. Eligible previous buyers of the paid app keep permanent Pro access. Your existing data remains readable and exportable as CSV without Pro.',
  'privacy_label':'Your data is your business','privacy_title':'Stored locally.<br>Connected <em>by choice.</em>',
  'privacy_text':'No StockScan account required. Your core inventory works locally, without advertising or tracking in the app.',
  'privacy_points':[
@@ -139,27 +142,30 @@ C = {
   ['Share Pro. Keep inventories private.','Apple Family Sharing shares the Pro entitlement with your family. It does not share inventories or your private iCloud database.']],
  'faq_label':'Good to know','faq_title':'Any questions?','faq_text':'The essentials to help you get started.','support_cta':'Get help & contact support',
  'faqs':[
+  ['Which languages does the app support?','StockScan is available in English, German, French, Spanish, Italian, Portuguese (Portugal), Dutch and Polish. Choose a language in the app’s Settings or use the system language. This website is available in English and German.'],
   ['What’s included for free?','One active inventory with up to 100 different items, free or fixed counting, quantity calculations, master-data imports, completion, history, unlimited CSV exports and the Apple Watch single-item counter.'],
   ['What’s the difference between free and fixed inventories?','A free inventory captures the items you find. A fixed inventory starts with an imported checklist. Every required item must be counted or explicitly skipped before completion. Additional items are marked separately.'],
-  ['Can I work with Excel and CSV?','Yes. Import product and manufacturer data from XLSX or CSV. Fixed checklists also support TSV. CSV exports are free and unlimited; enriched Excel reports require Pro. Export Numbers documents to XLSX or CSV first.'],
+  ['Can I work with Excel and CSV?','Yes. XLSX and CSV import is free within the Free limits. Import product and manufacturer data from XLSX or CSV. Fixed checklists also support TSV. CSV exports are free and unlimited; enriched Excel reports require Pro. Export Numbers documents to XLSX or CSV first.'],
   ['Does StockScan work without internet?','Core inventory works offline. Purchases, restores and optional iCloud sync need a connection to Apple services. Watch counts are queued when the connection is interrupted.'],
   ['Which devices are supported?','StockScan runs on iPhone and iPad with iOS or iPadOS 18 and later. The paired Apple Watch companion requires watchOS 10 or later. Live Activities, Dynamic Island and Apple Intelligence also depend on device support and system availability.'],
-  ['What happens if I cancel Pro?','Existing inventory data remains readable and exportable as CSV. Free limits apply again to new lists and items. Pro features such as XLSX and iCloud sync require an active entitlement. Previous buyers of the paid app keep permanent Pro access.']],
+  ['What happens if I cancel Pro?','Existing inventory data remains readable and exportable as CSV. Free limits apply again to new lists and items. Pro features such as XLSX and iCloud sync require an active entitlement. Eligible previous buyers of the paid app keep permanent Pro access.']],
  'cta_title':'Your next inventory?<br>It starts with <em>one scan.</em>','cta_text':'Download StockScan for free. Create your first list. Start counting.',
  'footer_line':'For stock you want to keep in view.','compat':'iOS / iPadOS 18+ · watchOS 10+',
  'media_title':'Materials for<br>a <em>clear impression.</em>','media_intro':'Official StockScan materials: real app views, finished visuals and copy for websites, press and social media. In English and German.',
  'media_downloads':[
-  ['The complete marketing kit','24 App Store visuals for iPhone and iPad, German and English banners, social posts, stories, copy and contact sheets.','Download marketing kit','StockScan-1.4.0-Marketing.zip'],
-  ['The release visual','StockScan 1.4 as a 1600 × 900 PNG. For websites, newsletters and presentations.','Download PNG','release-banner-en.png'],
+  ['The complete marketing kit','24 current iPhone and iPad visuals, four header and search graphics, plus German and English copy. App views use fictional sample data.','Download marketing kit','StockScan-Media-DE-EN-2026-10-17.zip'],
+  ['Full-size header','Wide 3840 × 1646 artwork for websites and editorial use.','Download PNG','header-en.png'],
+  ['Search & campaign visual','3840 × 2560 artwork with real app views and clear CSV and Pro labels.','Download PNG','search-en.png'],
+  ['The cover visual','Current StockScan artwork as a 1600 × 900 PNG. For websites, newsletters and presentations.','Download PNG','release-banner-en.png'],
   ['Square social post','A finished 1080 × 1080 visual with a real app view.','Download PNG','square-en-1080x1080.png'],
   ['Stories & status','A 1080 × 1920 portrait visual for stories and status posts.','Download PNG','story-en-1080x1920.png'],
   ['Made for shared links','A 1200 × 630 social graphic for link previews and editorial posts.','Download JPG','social-en.jpg']],
  'media_copy_title':'Copy you can put to work.',
  'media_copy':[
   ['Short description','StockScan is the inventory app for iPhone, iPad and Apple Watch. Capture barcodes and quantities, count freely or follow a fixed checklist and export results as CSV for free. Pro adds tools including Excel reports and private iCloud sync.'],
-  ['Release post','Your inventory. Clearly in view. StockScan 1.4 brings Capture, Lists and Data into one clear workflow. Import fixed checklists, review open items before completion and reuse your checklist next time. Start free: 1 active inventory, up to 100 items and unlimited CSV exports.'],
+  ['Inventory post','Count stock. Review uncounted items. Share your results. StockScan takes you from your first item to your export. Import a fixed checklist or count freely. Start free with 1 active inventory, up to 100 different items and unlimited CSV exports.'],
   ['Workshop post','Materials on the shelf. Quantities in view. Scan items, calculate packs right in the app and take your stock count with you as CSV. For storage, workshops and service vans, with core inventory that works offline.'],
-  ['Pro post','For your regular stocktake: StockScan Pro adds unlimited lists and items, Fast Scan, enriched Excel reports, target-versus-actual comparisons and complete count lists on Apple Watch. Optional private iCloud sync keeps your own devices in step.']],
+  ['Pro post','For your regular stocktake: StockScan Pro removes Free list and item limits and adds Fast Scan, enriched Excel reports, target-versus-actual comparisons and complete count lists on Apple Watch. Optional private iCloud sync keeps your own devices in step.']],
  'media_terms':'These materials may be used for reporting on StockScan and promoting the app. App views show fictional sample data. Please retain Pro labels and device availability qualifications. Trademarks remain the property of their respective owners.',
 }}
 
@@ -187,7 +193,7 @@ def page(lang, filename, body, title=None, description=None):
 <html lang="{lang}" class="no-js"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(description)}">
-<meta name="theme-color" content="#103e31"><meta name="apple-itunes-app" content="app-id=6760256901">
+<meta name="theme-color" content="#0c3029"><meta name="apple-itunes-app" content="app-id=6760256901">
 <link rel="canonical" href="{url}"><link rel="alternate" hreflang="de" href="{de}"><link rel="alternate" hreflang="en" href="{en}"><link rel="alternate" hreflang="x-default" href="{de}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="StockScan"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{url}"><meta property="og:locale" content="{'de_DE' if lang=='de' else 'en_US'}"><meta property="og:image" content="{BASE}assets/marketing/social-{lang}.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(c['title'])}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="{pre}img/icon.png"><link rel="apple-touch-icon" href="{pre}img/icon.png"><link rel="stylesheet" href="{pre}assets/site.css"><script defer src="{pre}assets/site.js"></script>
@@ -207,13 +213,13 @@ def home(lang):
  rows=''.join(f'<div class="detail-row"><b>0{i}</b><div><h3>{title}</h3><p>{text}</p></div></div>' for i,(title,text) in enumerate(c['new_rows'],1))
  features=''.join(f'<article class="feature"><h3>{title} {"<span class=tag>Pro</span>" if pro else ""}</h3><p>{text}</p></article>' for title,text,pro in c['features'])
  keys=['01-inventory','02-quantity','03-review','04-data','05-export','06-lists']
- gallery=''.join(f'<figure>{picture(lang,key)}<figcaption><span>0{i}</span>{caption}</figcaption></figure>' for i,(key,caption) in enumerate(zip(keys,c['captions']),1))
+ gallery=''.join(f'<figure>{picture(lang,key)}<figcaption><span>0{i}</span>{caption}</figcaption></figure>' for i,(key,caption) in enumerate([(keys[i], c['captions'][i]) for i in [0,2,4,1,3,5]],1))
  plans=''
  for name in ['free','pro']:
   plans+=f'<article class="price-card {name}"><span class="kicker">{c[name+"_kicker"]}</span><h3>{c[name+"_name"]}</h3><p>{c[name+"_text"]}</p><ul>'+''.join(f'<li>{item}</li>' for item in c[name+'_items'])+f'</ul>{button(c,"light" if name=="pro" else "outline", c["pro_cta"] if name=="pro" else c["download"])}</article>'
  privacy=''.join(f'<div class="privacy-point"><h3>{title}</h3><p>{text}</p></div>' for title,text in c['privacy_points'])
  body=f'''
-<section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><span class="eyebrow dot">{c['hero_label']}</span><h1 id="hero-title">{c['hero_title']}</h1><p class="lead">{c['hero_text']}</p><div class="hero-actions">{button(c)}<a class="text-link" href="#features">{c['hero_secondary']} <span aria-hidden="true">↗</span></a></div><p class="micro">{c['hero_small']}</p><div class="devices"><span>iPhone</span><span>iPad</span><span>Apple Watch</span></div></div><div class="hero-art"><div class="orbit" aria-hidden="true"></div><div class="orbit two" aria-hidden="true"></div><div class="hero-chip top"><strong>{c['chip_top']}</strong>{c['chip_sub']}</div>{picture(lang,'01-inventory',eager=True,cls='phone hero-phone')}<div class="hero-chip bottom"><span class="chip-check" aria-hidden="true">✓</span><div><strong>{c['chip_bottom']}</strong>{c['chip_bottom_sub']}</div></div><span class="art-note">{c['screen_note']}</span></div></section>
+<section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><span class="eyebrow dot">{c['hero_label']}</span><h1 id="hero-title">{c['hero_title']}</h1><p class="lead">{c['hero_text']}</p><div class="hero-actions">{button(c)}<a class="text-link" href="#features">{c['hero_secondary']} <span aria-hidden="true">↗</span></a></div><p class="micro">{c['hero_small']}</p><div class="devices"><span>iPhone</span><span>iPad</span><span>Apple Watch</span></div></div><div class="hero-art"><div class="orbit" aria-hidden="true"></div><div class="orbit two" aria-hidden="true"></div>{picture(lang,'01-inventory',eager=True,cls='phone hero-phone')}<div class="hero-caption"><strong>{c['chip_bottom_sub']}</strong><span>{c['screen_note']}</span></div></div></section>
 <div class="benefit-strip"><div class="wrap benefits">{''.join(f'<span><b aria-hidden="true">✓</b>{s}</span>' for s in c['benefits'])}</div></div>
 <section id="features" class="section wrap"><div class="section-head"><div><span class="eyebrow">{c['workflow_label']}</span><h2>{c['workflow_title']}</h2></div><p>{c['workflow_intro']}</p></div><div class="workflow-grid">{steps}</div></section>
 <section class="dark-section"><div class="section wrap new-layout"><div class="new-copy"><span class="tag">{c['new_label']}</span><h2>{c['new_title']}</h2><p>{c['new_text']}</p><div class="detail-list">{rows}</div></div><div class="new-art">{picture(lang,'03-review')}<div class="note">{c['new_note']}</div></div></div></section>

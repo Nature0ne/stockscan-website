@@ -5,13 +5,14 @@ from build import C, ROOT, BASE, page, faq_html
 CONTACT='<p>Sascha Bommels<br>Flandernstr. 18<br>46147 Oberhausen<br>Deutschland / Germany<br><a href="mailto:stockscansupport@gmail.com">stockscansupport@gmail.com</a></p>'
 DOCS={
 'de':{
- 'support_title':'Wie können wir helfen?', 'support_intro':'Die wichtigsten Handgriffe für StockScan 1.4. Direkt zum nächsten Scan.',
+ 'support_title':'Wie können wir helfen?', 'support_intro':'Vom Artikelimport bis zum fertigen Bericht: Hier findest du Hilfe zum Zählen, Prüfen und Exportieren mit StockScan.',
  'help':[
   ['Wie starte ich eine freie oder feste Inventur?','Öffne „Listen“ und lege eine neue Inventur an. Für eine feste Inventur wählst du eine Artikelvorgabe aus XLSX, CSV oder TSV aus. Das geht auch in „Daten“ über „Feste Inventur aus Datei“. Prüfe die Vorschau und erstelle anschließend die Liste.'],
   ['Wie übernehme ich meinen Artikelstamm?','Öffne „Daten“ → „Produkt-Stammdaten“ und wähle deine XLSX- oder CSV-Datei. Die Datei benötigt eine EAN oder Artikelnummer; Namen und Einheiten können ergänzt werden. Prüfe die Vorschau vor dem Import. Hersteller und Lieferanten übernimmst du separat über „Hersteller-Zuordnungen“.'],
   ['Warum lässt sich die feste Inventur nicht abschließen?','Jeder Vorgabeartikel muss gezählt oder ausdrücklich übersprungen sein. Öffne „Vorgabeartikel prüfen“, zähle offene Artikel nach oder überspringe sie bewusst. Eine gezählte Menge von null ist etwas anderes als ein übersprungener Artikel.'],
   ['Wie verwende ich dieselbe Vorgabe erneut?','Wähle im Menü der festen Inventur „Zählungen zurücksetzen“ und bestätige die Aktion. Die feste Vorgabe bleibt erhalten. Mengen, Kommentare und Überspringen-Entscheidungen werden zurückgesetzt; zusätzliche Positionen werden entfernt. Sichere bei Bedarf vorher deinen Bericht.'],
   ['Wie exportiere ich meinen Bestand?','Öffne „Daten“, wähle die gewünschte Exportliste und danach das Exportformat. CSV ist kostenlos und unbegrenzt verfügbar. Mit Pro kannst du angereicherte Excel-Dateien (.xlsx) erstellen. Über das System-Teilen-Menü speicherst oder teilst du die Datei.'],
+  ['Ist der Excel-Import kostenlos?','Ja. Auch ohne Pro kannst du deinen Artikelstamm und feste Artikelvorgaben aus Excel-Dateien (.xlsx) importieren. CSV-Export ist ebenfalls kostenlos und unbegrenzt. Für Excel-Berichte (.xlsx) im Export benötigst du Pro. In der kostenlosen Version gilt eine aktive Inventur mit bis zu 100 unterschiedlichen Artikeln.'],
   ['Wie berechne ich Mengen und behandle doppelte Scans?','Gib beim Erfassen einen Ausdruck wie 7 × 8 ein; StockScan berechnet 56. Bei einem erneut erfassten Artikel kannst du die Menge addieren oder ersetzen. Kontrolliere dabei die gewählte Einheit. Pro Fast Scan unterstützt einstellbare direkte Zählschritte.'],
   ['Die Kamera erkennt den Code nicht. Was hilft?','Prüfe in den iOS-Einstellungen die Kameraberechtigung für StockScan. Beleuchte den vollständigen Code gleichmäßig und halte die Kamera ruhig. Du kannst Artikelnummern in „Erfassen“ auch manuell eingeben.'],
   ['Wie nutze ich die Apple Watch?','Wähle auf dem iPhone einen Artikel zum Zählen auf der gekoppelten Watch. Pro kann über die Listenaktion „Zählliste an Watch senden“ eine ganze Inventurliste übertragen. Lass die Geräte die ausstehenden Zählungen synchronisieren, bevor du die Inventur abschließt.'],
@@ -36,13 +37,14 @@ DOCS={
  ]
 },
 'en':{
- 'support_title':'How can we help?','support_intro':'The essential steps for StockScan 1.4. Get back to your next scan.',
+ 'support_title':'How can we help?','support_intro':'From importing your item list to sharing the final report: find help with counting, reviewing and exporting in StockScan.',
  'help':[
   ['How do I start a free or fixed inventory?','Open Lists and create a new inventory. For a fixed inventory, select a checklist in XLSX, CSV or TSV format. You can also use Fixed inventory from file in Data. Review the preview, then create your list.'],
   ['How do I import product data?','Open Data → Product master data and choose your XLSX or CSV file. It needs an EAN or item number; names and units can be added. Review the preview before importing. Import manufacturer and supplier mappings separately via Manufacturer mappings.'],
   ['Why can’t I complete a fixed inventory?','Every required item must be counted or explicitly skipped. Open the required-item review, count remaining items or choose to skip them. A counted quantity of zero is different from a skipped item.'],
   ['How do I reuse the same checklist?','Choose Reset counts from the fixed inventory menu and confirm. The checklist stays in place. Counts, comments and skip decisions are cleared; additional items are removed. Export your report beforehand if you need to keep it.'],
   ['How do I export inventory?','Open Data, select the list to export and choose an export format. CSV is free and unlimited. Pro adds enriched Excel (.xlsx) exports. Save or share the file using the system share sheet.'],
+  ['Is Excel import free?','Yes. You can import product data and fixed checklists from Excel (.xlsx) files without Pro. CSV export is also free and unlimited. Exporting Excel (.xlsx) reports requires Pro. The free version allows one active inventory with up to 100 distinct items.'],
   ['How do calculations and duplicate scans work?','Enter an expression such as 7 × 8; StockScan calculates 56. When capturing an existing item, you can add to or replace its quantity. Check the selected unit. Pro Fast Scan supports configurable direct count steps.'],
   ['The camera isn’t recognising a code. What can I do?','Check StockScan’s camera permission in iOS Settings. Light the full code evenly and hold the camera steady. You can also enter an item number manually in Capture.'],
   ['How do I use Apple Watch?','Select an item on iPhone to count on your paired Watch. Pro can send an entire inventory using the list action Send count list to Watch. Let the devices sync pending counts before completing the inventory.'],

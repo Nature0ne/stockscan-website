@@ -5,3 +5,6 @@ artifacts/
 # Preserve original captures locally; publish the optimized equivalents.
 assets/screens/*.png
 assets/workshop.png
+
+.playwright-cli/
+output/

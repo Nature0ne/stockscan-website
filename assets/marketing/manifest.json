@@ -1,117 +1,279 @@
 [
   {
     "file": "01-inventory-de-1320x2868.png",
-    "bytes": 345416,
-    "sha256": "d350fdab3a3e2a78f76c9f2625661a6a2426bf3e5c1132c81ef391655ce56523"
+    "bytes": 384797,
+    "sha256": "e4a57dcda8817a7e5be4312df202eb75ace62d429271fe31f2018f001192ba31",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "01-inventory-en-1320x2868.png",
-    "bytes": 339852,
-    "sha256": "026785f0eebde6034afb1112652e696a0d1500fb6dd37cdced19546b23f90953"
+    "bytes": 385974,
+    "sha256": "cfa93a71fb58a60fd77e72701adb3641a08caf6fcd157a3d8f41b3a13852948b",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "02-quantity-de-1320x2868.png",
-    "bytes": 274002,
-    "sha256": "72631127c2f95d96bf1a6b59052b930c22691052ebd5253a783b3b3b18157750"
+    "bytes": 391723,
+    "sha256": "eee00a5890db91ac12cb14e486f5b80de26dd445583eeb7ccfc2cf1d621351d9",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "02-quantity-en-1320x2868.png",
-    "bytes": 270803,
-    "sha256": "399e8289933451078bd6a2200d2306a0d5236c8177c34950b2404a518886155d"
+    "bytes": 399063,
+    "sha256": "509b2761f75e490af5597cd670098f0a9778a105ba06b9abbad6f792c4f1f6df",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "03-review-de-1320x2868.png",
-    "bytes": 387506,
-    "sha256": "e7736ca0e30a0724708d0e40c7f3ba9b6ff7f8fe76b161568597f63a4f8e7319"
+    "bytes": 442614,
+    "sha256": "e3f15cd250ee3f6c1c5185843fa0d3b67676fa3860931974ba36b31f76b403b4",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "03-review-en-1320x2868.png",
-    "bytes": 374433,
-    "sha256": "40681905d893167f72cafdb79dddaca3a6eb0eb1f6ac5a161129291cc014d858"
+    "bytes": 442813,
+    "sha256": "4fc3af0881923f3b5547bf7252ac397258c4ad36c6ebcb54614762bba9b26b78",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "04-data-de-1320x2868.png",
-    "bytes": 327626,
-    "sha256": "91f7af4d7fc0190c0b8cd4abc1b1ad5fc3bbffcaa228e7785aaa3f6e25ce36bf"
+    "bytes": 434407,
+    "sha256": "cf7d67289e9531177f957697f62442b386ce2162d91d90339e2b0a7510b1c4b3",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "04-data-en-1320x2868.png",
-    "bytes": 300584,
-    "sha256": "ccf85bcce1c7a326275b47d62b285810a11a49b132b2746028e2b14eb8f7a523"
+    "bytes": 411510,
+    "sha256": "09e1457c06696ab72be0425951af6292d85c0fe032a6df33d79c4afbad40f0d8",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "05-export-de-1320x2868.png",
-    "bytes": 469711,
-    "sha256": "a6ecd2ff4e128d0837223026e8e61c84026105a732f01c32022c03f996c69c4f"
+    "bytes": 511368,
+    "sha256": "8cf9cdcc2ce78f4fff94c1e085fe043fdf7644059d0573fe91f2f21f0c75bf2f",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "05-export-en-1320x2868.png",
-    "bytes": 442117,
-    "sha256": "7aa3c2a8ef09267af6649483501be1b77c9386335c7d903e9d2a49c8dce947d8"
+    "bytes": 488078,
+    "sha256": "c41e4ce7dd607bea4f5d018c6c57ddff797665408a070dfcb80224650891c34f",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "06-lists-de-1320x2868.png",
-    "bytes": 278473,
-    "sha256": "4d0dc298605881c8f2420aa53c9c512d29c153b3547310555194a0ecda4d5d45"
+    "bytes": 415131,
+    "sha256": "eb8b0c8cc37c843d34554cd3198c23ac7bc04895769a26e21b590142ae19f85d",
+    "width": 1320,
+    "height": 2868
   },
   {
     "file": "06-lists-en-1320x2868.png",
-    "bytes": 268605,
-    "sha256": "5895b28698781d486aed33bc98a42b2493125d4345d3ee2075dcd1db2b95ef04"
+    "bytes": 413859,
+    "sha256": "39ff134eaabcd35708b7d04dd7dfbb0a6a6833a786ecb40685dbdfa392254bf3",
+    "width": 1320,
+    "height": 2868
   },
   {
-    "file": "StockScan-1.4.0-Marketing.zip",
-    "bytes": 9596789,
-    "sha256": "3e1a0ddd5eaba48e5d5b211558804540e45f6c40895e2a489a325afa0b3369e1"
+    "file": "StockScan-Media-DE-EN-2026-10-17.zip",
+    "bytes": 11637759,
+    "sha256": "f496eb13e5f1fd1bbb61cca183996e1a04c0baa66c66e6df36a6e004356bf2c2"
+  },
+  {
+    "file": "apple-frames-license.rtf",
+    "bytes": 14462,
+    "sha256": "d4e878874cad6e0fe215ff45c3e2a2e31e4d4895af30332a12aebd425941d28a"
   },
   {
     "file": "copy-de.txt",
-    "bytes": 1187,
-    "sha256": "8058c2d27c03b9bbfa8834305a68effb3a9fafecd9716f30d49ab3299855cc69"
+    "bytes": 1181,
+    "sha256": "eb376e9b6b5bbeacd7727bcea34027a9c0bc23eaa6fe0fc983cb3d2734374ebb"
   },
   {
     "file": "copy-en.txt",
-    "bytes": 1069,
-    "sha256": "eac35a62d66d57949902d49729551ecc96179f5d3f2235f5b54f6842e0a83b09"
+    "bytes": 1052,
+    "sha256": "9eeac3d3291a40d40c9bb06a037cb9a922d008104977f253b140e08ec167cfd8"
+  },
+  {
+    "file": "header-de.png",
+    "bytes": 163640,
+    "sha256": "93ee54eebf666b6508b85807c408bbd1cc002428145055d46ed2ce29012b6046",
+    "width": 3840,
+    "height": 1646
+  },
+  {
+    "file": "header-en.png",
+    "bytes": 154303,
+    "sha256": "00384030b016ecc7b54510d8515ef1e83b350d97d44e0fb7112f6c0ac5485086",
+    "width": 3840,
+    "height": 1646
+  },
+  {
+    "file": "ipad-de-01-inventory-2064x2752.png",
+    "bytes": 429215,
+    "sha256": "6c77fe1d55f5025d9df0b1e6564d5f8f0c3975d9b08d01f33fcc677f2fc43726",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-de-02-quantity-2064x2752.png",
+    "bytes": 415716,
+    "sha256": "2633a650799dc801889447f957ffca80cbecaa4ccb4d5ea857d7939afc2c959e",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-de-03-review-2064x2752.png",
+    "bytes": 446096,
+    "sha256": "2ca774fa890beec1104a18ca836c627c4fd70f62eba746011eed4727b364e0d1",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-de-04-data-2064x2752.png",
+    "bytes": 295447,
+    "sha256": "35c1d3e2bff680b7fa41e0898a615ef73078766ae1f6bab96cb483ab10a1fb15",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-de-05-export-2064x2752.png",
+    "bytes": 455552,
+    "sha256": "86a600d4c3a8ca9bbe05a6461bbc05fd7377e4911097b18a0e475714fcd2f3b1",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-de-06-lists-2064x2752.png",
+    "bytes": 364823,
+    "sha256": "dd9c8c400a5b4eebc30e311a00958db724af4dc418aedb1f3746fefc410a6702",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-en-01-inventory-2064x2752.png",
+    "bytes": 407663,
+    "sha256": "94cbe48b4cd325167fc8348f0d503ed0efdc1fafcf01ca9c94dfac3aca940599",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-en-02-quantity-2064x2752.png",
+    "bytes": 403326,
+    "sha256": "65d0a393c8c8b4993da8a3c70996875bdf619a2881ff593463afb5592edfbefe",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-en-03-review-2064x2752.png",
+    "bytes": 450329,
+    "sha256": "0513e7bba3aed1fb7fc3f09bace7d1fbe9deafa62009bae12ec61da9792bcd7c",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-en-04-data-2064x2752.png",
+    "bytes": 294305,
+    "sha256": "f3003bcbc88b627e15a198b174a7f05c82640e3ab064ab3b058239078abc5e1f",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-en-05-export-2064x2752.png",
+    "bytes": 434867,
+    "sha256": "31a0e6058ea80326e3259bc697a9f986c98dc9ef427b94d1abd42cb2a95d984c",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "ipad-en-06-lists-2064x2752.png",
+    "bytes": 351581,
+    "sha256": "99e9f7a99035b91b140673f0fd7e5042e0246db1f1a1b38b386c1ebb034da037",
+    "width": 2064,
+    "height": 2752
+  },
+  {
+    "file": "provenance.json",
+    "bytes": 31177,
+    "sha256": "5763d8f640170c64e32d3cc73ab6b81f9f18b1042002efd4a773e0b260445eda"
   },
   {
     "file": "release-banner-de.png",
-    "bytes": 130066,
-    "sha256": "87edfa24b82dbe4584466e1919963542c807b18a97a9fb16730e6b54201bc5cd"
+    "bytes": 87879,
+    "sha256": "18242d521e674528a8f2365b725cf412ff164f17d1fde1de7a3f8c87b7fd8635",
+    "width": 1600,
+    "height": 900
   },
   {
     "file": "release-banner-en.png",
-    "bytes": 129256,
-    "sha256": "ac410f082a0d9beb88d14ebfa35ff77dd003357b7dc0ad911ddea3c34fa9e487"
+    "bytes": 80987,
+    "sha256": "d15abf12a061a58ab11cbd624168709fe6391c3c0697c1a374ef022abf5f4972",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "file": "search-de.png",
+    "bytes": 454920,
+    "sha256": "1f46ad229e2f694910c3abd17ea51cb8a2224e031fe054b8f2088ef6aef116b3",
+    "width": 3840,
+    "height": 2560
+  },
+  {
+    "file": "search-en.png",
+    "bytes": 423895,
+    "sha256": "39ded934cab7f3c8343269535bccfb39fd667bc836206156ac8a1d1de4b1fc9a",
+    "width": 3840,
+    "height": 2560
   },
   {
     "file": "social-de.jpg",
-    "bytes": 63868,
-    "sha256": "67f0dc4b717ae0ad44f828ab4b93bf1938602053ee4da14bbdfc2990da592767"
+    "bytes": 32072,
+    "sha256": "8764b246876deaff64a80a1ef8eefdc74361bef848a4c8fc4168092fdeaed4f7",
+    "width": 1200,
+    "height": 630
   },
   {
     "file": "social-en.jpg",
-    "bytes": 63132,
-    "sha256": "d0d3acaa937aa734d492116c5802eeeb526394f1ddbb51884cdf19936c6ebc4e"
+    "bytes": 27670,
+    "sha256": "ecd4715425a2a49d684a32aa5375fd5595ebf815353418aeedcdec6d1fde980d",
+    "width": 1200,
+    "height": 630
   },
   {
     "file": "square-de-1080x1080.png",
-    "bytes": 171375,
-    "sha256": "c6ad0b6385e887d092b9eec48f5eafb22b0b06ac986fcb0714ab4e560e083220"
+    "bytes": 112298,
+    "sha256": "b85291b923bf901c0c04b2c8526b96baacf9e8129c56baed33b4a11f3f2f356c",
+    "width": 1080,
+    "height": 1080
   },
   {
     "file": "square-en-1080x1080.png",
-    "bytes": 166364,
-    "sha256": "afff76e48bea86e10014f33d5c49e6e59d4a9a6094766c6b6a864e184fce1860"
+    "bytes": 105294,
+    "sha256": "e96a90d271a5d2479b14fda194e7b4228d0903d90a8d20146a15d96fcd466585",
+    "width": 1080,
+    "height": 1080
   },
   {
     "file": "story-de-1080x1920.png",
-    "bytes": 215358,
-    "sha256": "3fe4788dbada1920ea7fed309f58cfcf369423e4e3596d3e20fc5fbb0c620a22"
+    "bytes": 310251,
+    "sha256": "5ea59441a607a989e3ff5f19a0c3e11ddfdc33abcd8f8ce703cac6a098ea8324",
+    "width": 1080,
+    "height": 1920
   },
   {
     "file": "story-en-1080x1920.png",
-    "bytes": 208527,
-    "sha256": "2e80d7c6ade31d042d66e409ea76c18ecf81039884eb377033af1ff0dfbcc6c5"
+    "bytes": 295272,
+    "sha256": "267bff7090524051d5c8b0da9cee85669e0fa1c5c4098479113f4ffbed895c0c",
+    "width": 1080,
+    "height": 1920
   }
 ]
